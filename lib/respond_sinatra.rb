@@ -1,10 +1,21 @@
+ENV["RACK_ENV"] ||= "development"
+
+require "sinatra/base"
+require "sinatra/reloader" if ENV["RACK_ENV"] == "development"
 require_relative "../../respond/respond"
 
 module Respond
   class SinatraMiddleware
     def initialize
-      require "sinatra/base"
-      Respond.middleware_app = Class.new(Sinatra::Base)
+      Respond.underlying_app = Class.new(Sinatra::Base) do
+        configure :development do
+          if Object.const_defined? "Sinatra::Reloader"
+            register Sinatra::Reloader
+            dont_reload __FILE__
+            also_reload $app_file
+          end
+        end
+      end
     end
 
     def create_route_handler(verb:, route:, component:)
@@ -17,13 +28,13 @@ module Respond
           raise "invalid verb"
         end
 
-      Respond.middleware_app.public_send meth, route do
+      Respond.underlying_app.public_send meth, route do
         to_html(component)
       end
     end
   end
 end
 
-Respond.use_middleware Respond::SinatraMiddleware
+Respond.middleware = Respond::SinatraMiddleware.new
 
-at_exit { Respond.middleware_app.run! }
+at_exit { Respond.underlying_app.run! }

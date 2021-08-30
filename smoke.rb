@@ -1,3 +1,5 @@
+$app_file = __FILE__
+
 require_relative "lib/respond_sinatra"
 
 class Layout < Respond::Component
@@ -71,9 +73,9 @@ class App < Respond::Component
             h2 { "This is the first section of this page" },
             para {
               [
-                "This is a block of text with an",
+                "This is a block of text with an ",
                 span { i { "important" } },
-                "section in it",
+                " section in it",
               ]
             },
           ]
