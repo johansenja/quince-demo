@@ -3,7 +3,7 @@ ENV["RACK_ENV"] ||= "development"
 require "sinatra/base"
 require "sinatra/reloader" if ENV["RACK_ENV"] == "development"
 require "rack/contrib"
-require_relative "../../respond/respond"
+require_relative "../../respond/lib/respond"
 
 module Respond
   class SinatraMiddleware
@@ -13,7 +13,7 @@ module Respond
           if Object.const_defined? "Sinatra::Reloader"
             register Sinatra::Reloader
             dont_reload __FILE__
-            also_reload $app_file
+            also_reload $0
           end
         end
         use Rack::JSONBodyParser
@@ -32,7 +32,7 @@ module Respond
 
       Respond.underlying_app.public_send meth, route do
         component ||= yield(params)
-        to_html(component)
+        Respond.to_html(component)
       end
     end
   end
