@@ -3,24 +3,33 @@ $app_file = __FILE__
 require_relative "lib/respond_sinatra"
 
 class Layout < Respond::Component
-  Props(
-    page_contents: Respond::Component,
-  )
+  State(count: Integer)
+
+  self.initial_state = {
+    count: 0,
+  }
+
+  exposed def reload_footer
+    state.count += 1
+  end
 
   def render
     page_title = "My cool app"
     html {
       [
         head {
-          title { page_title }
+          [
+            title { page_title },
+            internal_scripts,
+          ]
         },
         body {
           [
             header {
-              Navbar(page_title: page_title)
+              Navbar(page_title: page_title, reload_footer: method(:reload_footer))
             },
             children,
-            Footer(),
+            Footer(count: state.count),
           ]
         },
       ]
@@ -31,6 +40,7 @@ end
 class Navbar < Respond::Component
   Props(
     page_title: String,
+    reload_footer: Method,
   )
 
   def render
@@ -46,18 +56,24 @@ class Navbar < Respond::Component
             li { "Contact us" },
           ]
         },
+        button(onclick: props.reload_footer) { "Reload footer" },
       ]
     }
   end
 end
 
 class Footer < Respond::Component
+  Props(
+    count: Integer,
+  )
+
   def render
     footer {
       [
         a { "Link 1" },
         a { "Link 2" },
         a { "Link 3" },
+        para { "Reloaded #{props.count} times" },
         div { "Copyright etc" },
       ]
     }

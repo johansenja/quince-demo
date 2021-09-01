@@ -2,6 +2,7 @@ ENV["RACK_ENV"] ||= "development"
 
 require "sinatra/base"
 require "sinatra/reloader" if ENV["RACK_ENV"] == "development"
+require "rack/contrib"
 require_relative "../../respond/respond"
 
 module Respond
@@ -15,10 +16,11 @@ module Respond
             also_reload $app_file
           end
         end
+        use Rack::JSONBodyParser
       end
     end
 
-    def create_route_handler(verb:, route:, component:)
+    def create_route_handler(verb:, route:, component: nil)
       meth = case verb
         when :POST, :post
           :post
@@ -29,6 +31,7 @@ module Respond
         end
 
       Respond.underlying_app.public_send meth, route do
+        component ||= yield(params)
         to_html(component)
       end
     end
