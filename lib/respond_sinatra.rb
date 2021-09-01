@@ -20,7 +20,7 @@ module Respond
       end
     end
 
-    def create_route_handler(verb:, route:, component: nil)
+    def create_route_handler(verb:, route:, component: nil, &blck)
       meth = case verb
         when :POST, :post
           :post
@@ -29,12 +29,18 @@ module Respond
         else
           raise "invalid verb"
         end
+      handler = component ? ->(_) { component } : blck
+      Respond::SinatraMiddleware.send(:routes)[[verb, route]] = handler
 
       Respond.underlying_app.public_send meth, route do
-        component ||= yield(params)
-        Respond.to_html(component)
+        handler = Respond::SinatraMiddleware.send(:routes)[[verb, route]]
+        Respond.to_html(handler.call(params))
       end
     end
+
+    private_class_method def self.routes
+                           @routes ||= {}
+                         end
   end
 end
 
