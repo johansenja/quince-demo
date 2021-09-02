@@ -1,6 +1,7 @@
 require_relative "../../respond-sinatra/lib/respond_sinatra"
 require_relative "show_hide"
 require_relative "counter"
+require_relative "multi_step_form"
 
 class Index < Respond::Component
   def render
@@ -12,7 +13,7 @@ end
 
 class Content < Respond::Component
   State(
-    page: Rbs("'counter' | 'show_hide' | nil"),
+    page: Rbs("'counter' | 'show_hide' | 'multi_step_form' | nil"),
   )
 
   self.initial_state = {
@@ -27,6 +28,10 @@ class Content < Respond::Component
     state.page = "show_hide"
   end
 
+  exposed def set_multi_step_form
+    state.page = "multi_step_form"
+  end
+
   private def render_li(meth, label, colour)
     li(
       onclick: meth,
@@ -36,15 +41,17 @@ class Content < Respond::Component
 
   def render
     content = case state.page
-      when :counter
+      when "counter"
         Counter()
-      when :show_hide
+      when "show_hide"
         ShowHide()
+      when "multi_step_form"
+        MultiStepForm()
       when nil
         nil
       end
 
-    [
+    div(
       header(
         nav(h1 "Choose a page to view")
       ),
@@ -53,6 +60,7 @@ class Content < Respond::Component
           [
             render_li(method(:set_counter), "Increment a counter", "#456"),
             render_li(method(:set_show_hide), "Show/hide some text", "#a6c"),
+            render_li(method(:set_multi_step_form), "Fill in a multi-step form", "#16c"),
           ]
         },
         content
@@ -60,7 +68,7 @@ class Content < Respond::Component
       footer(
         h2 "These pages are listed in smoke/ directory"
       ),
-    ]
+    )
   end
 end
 
