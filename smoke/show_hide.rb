@@ -22,7 +22,7 @@ class ToggleVisibilitySection < Respond::Component
   def render
     div(
       state.para_visible ? para("This is the secret message") : nil,
-      button(onclick: method(:toggle_para_visible)) {
+      button(onclick: method(:toggle_para_visible), Class: "btn-lg", id: "show-hide") {
         "#{state.para_visible ? "Hide" : "Show"} secret message"
       }
     )

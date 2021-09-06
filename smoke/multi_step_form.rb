@@ -37,23 +37,62 @@ class MultiStepForm < Respond::Component
   end
 
   def render
-    buttons = [
-      button(onclick: method(:prev_step), disabled: state.current_step.zero?) { "Previous" },
-      button(onclick: method(:next_step), disabled: state.current_step === 4) { "Next" },
-      button(onclick: method(:process_form), disabled: state.current_step < 4) { "Submit" },
-    ]
+    buttons = div(Class: "btngroup") {
+      [
+        button(
+          formaction: to(:prev_step),
+          disabled: state.current_step.zero?,
+          type: "submit",
+        ) { "Previous" },
+        button(
+          formaction: to(:next_step),
+          disabled: state.current_step === 4,
+          type: "submit",
+        ) { "Next" },
+        button(
+          formaction: to(:process_form),
+          disabled: state.current_step < 4,
+          type: "submit",
+        ) { "Submit" },
+      ]
+    }
 
     contents = case state.current_step
       when 0
         [
-          input(value: state.step0[:first_name]),
-          input(value: state.step0[:last_name]),
-          input(value: state.step0[:favourite_food]),
+          div(Class: "inputgroup") {
+            [
+              label(for: :first_name) { "First name" },
+              input(value: state.step0[:first_name], name: :first_name),
+            ]
+          },
+          div(Class: "inputgroup") {
+            [
+              label(for: :last_name) { "Last name" },
+              input(value: state.step0[:last_name], name: :last_name),
+            ]
+          },
+          div(Class: "inputgroup") {
+            [
+              label(for: :favourite_food) { "Favourite food" },
+              input(value: state.step0[:favourite_food], name: :favourite_food),
+            ]
+          },
         ]
       when 1
-        input(value: state.step1[:favourite_car])
+        div(Class: "inputgroup") {
+          [
+            label(for: :favourite_car) { "Favourite car" },
+            input(value: state.step1[:favourite_car], name: :favourite_car),
+          ]
+        }
       when 2
-        input(value: state.step1[:spaghetti])
+        div(Class: "inputgroup") {
+          [
+            label(for: :spaghetti) { "Spaghetti" },
+            input(value: state.step1[:spaghetti], name: :spaghetti),
+          ]
+        }
       when 3
         [
           dl(
@@ -76,6 +115,13 @@ class MultiStepForm < Respond::Component
                )
       end
 
-    div(form(onsubmit: method(:process_form)) { contents }, *buttons)
+    section(
+      form(Method: :post) {
+        [
+          contents,
+          *buttons,
+        ]
+      }
+    )
   end
 end

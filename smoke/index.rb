@@ -1,7 +1,10 @@
+require "method_source"
+
 require_relative "../../respond-sinatra/lib/respond_sinatra"
 require_relative "show_hide"
 require_relative "counter"
 require_relative "multi_step_form"
+require_relative "tabbed_contents"
 
 class Index < Respond::Component
   def render
@@ -13,11 +16,11 @@ end
 
 class Content < Respond::Component
   State(
-    page: Rbs("'counter' | 'show_hide' | 'multi_step_form' | nil"),
+    page: Rbs("'counter' | 'show_hide' | 'multi_step_form' | Undefined"),
   )
 
   self.initial_state = {
-    page: nil,
+    page: "counter",
   }
 
   exposed def set_counter
@@ -32,41 +35,40 @@ class Content < Respond::Component
     state.page = "multi_step_form"
   end
 
-  private def render_li(meth, label, colour)
-    li(
-      onclick: meth,
-      style: "list-style:none;cursor: pointer; border-radius: 4px; padding: 4px 8px; background-color: #{colour}; color: #fee",
-    ) { label }
+  private def render_li(meth, label, active)
+    li(onclick: meth, Class: active ? "active" : Undefined) { label }
   end
 
   def render
     content = case state.page
       when "counter"
-        Counter()
+        TabbedContents(
+          demo: Counter(),
+          code: CodePanel(
+            code: MethodSource.source_helper(Object.const_source_location("Counter")),
+          ),
+        )
       when "show_hide"
         ShowHide()
       when "multi_step_form"
         MultiStepForm()
-      when nil
-        nil
+      when nil, Undefined
+        section
       end
 
     div(
       header(
-        nav(h1 "Choose a page to view")
+        h1("Respond component examples"),
       ),
-      div(
-        ul(style: "display: inline-flex") {
-          [
-            render_li(method(:set_counter), "Increment a counter", "#456"),
-            render_li(method(:set_show_hide), "Show/hide some text", "#a6c"),
-            render_li(method(:set_multi_step_form), "Fill in a multi-step form", "#16c"),
-          ]
-        },
+      main(
+        nav(
+          ul(
+            render_li(method(:set_counter), "Increment a counter", state.page == "counter"),
+            render_li(method(:set_show_hide), "Show/hide some text", state.page == "show_hide"),
+            render_li(method(:set_multi_step_form), "Fill in a multi-step form", state.page == "multi_step_form"),
+          )
+        ),
         content
-      ),
-      footer(
-        h2 "These pages are listed in smoke/ directory"
       ),
     )
   end
@@ -77,6 +79,7 @@ class Layout < Respond::Component
     html(
       head(
         title("Smoke tests"),
+        link(href: "/style.css", rel: :stylesheet),
         internal_scripts,
       ),
       body(

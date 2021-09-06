@@ -1,18 +1,27 @@
 class Counter < Respond::Component
-  State(count: Integer)
+  State(kount: Integer)
 
   self.initial_state = {
-    count: 0,
+    kount: 0,
   }
 
-  exposed def reload_footer
-    state.count += 1
+  exposed def increment
+    state.kount += 1
+  end
+
+  exposed def decrement
+    state.kount -= 1
   end
 
   def render
     section(
-      button(onclick: method(:reload_footer)) { "Increment" },
-      h3("Count: #{state.count}")
+      div(id: :count_container) {
+        [
+          button(onclick: method(:increment), id: :increment, Class: "btn-lg") { "++" },
+          h3("Count: #{state.kount}"),
+          button(onclick: method(:decrement), id: :decrement, Class: "btn-lg") { "--" },
+        ]
+      }
     )
   end
 end
