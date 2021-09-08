@@ -17,6 +17,7 @@ module Respond
           end
         end
         use Rack::JSONBodyParser
+        set :public_folder, File.join(File.dirname(File.expand_path($0)), "public")
       end
     end
 
@@ -46,4 +47,15 @@ end
 
 Respond.middleware = Respond::SinatraMiddleware.new
 
-at_exit { Respond.underlying_app.run! }
+at_exit do
+  if Object.const_defined? "Sinatra::Reloader"
+    app_dir = Pathname(File.expand_path($0)).dirname.to_s
+    $LOADED_FEATURES.each do |f|
+      next unless f.start_with? app_dir
+
+      Respond.underlying_app.also_reload f
+    end
+  end
+
+  Respond.underlying_app.run!
+end

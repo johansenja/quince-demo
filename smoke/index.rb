@@ -3,7 +3,7 @@ require "method_source"
 require_relative "../../respond-sinatra/lib/respond_sinatra"
 require_relative "show_hide"
 require_relative "counter"
-require_relative "multi_step_form"
+require_relative "basic_form"
 require_relative "tabbed_contents"
 
 class Index < Respond::Component
@@ -16,7 +16,7 @@ end
 
 class Content < Respond::Component
   State(
-    page: Rbs("'counter' | 'show_hide' | 'multi_step_form' | Undefined"),
+    page: Rbs("'counter' | 'show_hide' | 'basic_form' | Undefined"),
   )
 
   self.initial_state = {
@@ -31,12 +31,14 @@ class Content < Respond::Component
     state.page = "show_hide"
   end
 
-  exposed def set_multi_step_form
-    state.page = "multi_step_form"
+  exposed def set_basic_form
+    state.page = "basic_form"
   end
 
   private def render_li(meth, label, active)
-    li(onclick: meth, Class: active ? "active" : Undefined) { label }
+    li(Class: active ? "active" : Undefined) {
+      button(onclick: meth) { label }
+    }
   end
 
   def render
@@ -49,9 +51,19 @@ class Content < Respond::Component
           ),
         )
       when "show_hide"
-        ShowHide()
-      when "multi_step_form"
-        MultiStepForm()
+        TabbedContents(
+          demo: ShowHide(),
+          code: CodePanel(
+            code: MethodSource.source_helper(Object.const_source_location("ToggleVisibilitySection")),
+          ),
+        )
+      when "basic_form"
+        TabbedContents(
+          demo: BasicForm(),
+          code: CodePanel(
+            code: MethodSource.source_helper(Object.const_source_location("BasicForm")),
+          ),
+        )
       when nil, Undefined
         section
       end
@@ -65,7 +77,9 @@ class Content < Respond::Component
           ul(
             render_li(method(:set_counter), "Increment a counter", state.page == "counter"),
             render_li(method(:set_show_hide), "Show/hide some text", state.page == "show_hide"),
-            render_li(method(:set_multi_step_form), "Fill in a multi-step form", state.page == "multi_step_form"),
+            render_li(method(:set_basic_form), "Basic form", state.page == "basic_form"),
+            li(button(disabled: true) { "Multi step form - coming soon" }),
+            li(button(disabled: true) { "Infinite scroll - coming soon" }),
           )
         ),
         content

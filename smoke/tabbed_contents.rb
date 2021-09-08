@@ -15,7 +15,7 @@ class Tabs < Respond::Component
             li(
               onclick: props.set_demo_active,
               Class: props.current_tab == "demo" ? "active" : Undefined,
-            ) { "Demo" },
+            ) { "Example" },
             li(
               onclick: props.set_code_active,
               Class: props.current_tab == "code" ? "active" : Undefined,
@@ -34,7 +34,8 @@ class CodePanel < Respond::Component
   )
 
   def render
-    formatter = Rouge::Formatters::HTML.new
+    theme = Rouge::Themes::Gruvbox.new
+    formatter = Rouge::Formatters::HTMLInline.new(theme)
     formatter.format(
       Rouge::Lexers::Ruby.new.lex(
         props.code
@@ -72,7 +73,7 @@ class TabbedContents < Respond::Component
         set_code_active: method(:set_code_active),
         current_tab: state.current_tab,
       ),
-      state.current_tab == "code" ? props.code : props.demo,
+      state.current_tab == "code" ? pre(props.code) : props.demo,
     )
   end
 end

@@ -1,16 +1,16 @@
 class Counter < Respond::Component
-  State(kount: Integer)
+  State(val: Integer)
 
   self.initial_state = {
-    kount: 0,
+    val: 0,
   }
 
   exposed def increment
-    state.kount += 1
+    state.val += 1
   end
 
   exposed def decrement
-    state.kount -= 1
+    state.val -= 1
   end
 
   def render
@@ -18,7 +18,7 @@ class Counter < Respond::Component
       div(id: :count_container) {
         [
           button(onclick: method(:increment), id: :increment, Class: "btn-lg") { "++" },
-          h3("Count: #{state.kount}"),
+          h3("Count: #{state.val}"),
           button(onclick: method(:decrement), id: :decrement, Class: "btn-lg") { "--" },
         ]
       }

@@ -52,26 +52,41 @@ main > nav ul {
 main > nav li {
   width: 100%;
   list-style: none;
-  cursor: pointer;
   border-radius: 4px;
-  padding: 4px 0px;
   color: #456;
   border-left: 1px solid rgba(0,0,0,0.1);
   border-right: 1px solid rgba(0,0,0,0.1);
+  border-top: 1px solid rgba(0,0,0,0.1);
   background-color: #fff;
 }
 
-main > nav li:first-child {
-  border-top: 1px solid rgba(0,0,0,0.1);
-}
-
 main > nav li:last-child {
-  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 li.active {
   background-color: oldlace;
   box-shadow: 1px 1px 1px rgba(0,0,0,0.2) inset;
+}
+
+li button {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: inherit;
+  padding: 4px 0;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+button[onclick] {
+  cursor: pointer;
+}
+
+button[disabled], button:disabled {
+  cursor: not-allowed;
+  color: darkgray;
 }
 
 #count_container {
@@ -161,4 +176,14 @@ li.active {
 .source_tabs li:last-child {
   border-right: 1px solid rgba(0,0,0,0.1);
   border-radius: 0 8px 0 0;
+}
+
+pre {
+  background-color: #456;
+  padding: 24px;
+  border-radius: 3px;
+}
+
+pre span {
+  background-color: transparent !important;
 }
