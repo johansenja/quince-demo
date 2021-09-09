@@ -1,4 +1,4 @@
-class MultiStepForm < Respond::Component
+class MultiStepForm < Quince::Component
   State(
     step0: Rbs("Hash[:first_name | :last_name | :favourite_food, String]"),
     step1: Rbs("Hash[:favourite_car, String]"),

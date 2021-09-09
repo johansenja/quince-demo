@@ -1,4 +1,4 @@
-class Counter < Respond::Component
+class Counter < Quince::Component
   State(val: Integer)
 
   self.initial_state = {

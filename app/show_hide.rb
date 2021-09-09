@@ -1,4 +1,4 @@
-class ShowHide < Respond::Component
+class ShowHide < Quince::Component
   def render
     section(
       ToggleVisibilitySection(),
@@ -6,7 +6,7 @@ class ShowHide < Respond::Component
   end
 end
 
-class ToggleVisibilitySection < Respond::Component
+class ToggleVisibilitySection < Quince::Component
   State(
     para_visible: Rbs("TrueClass | FalseClass"),
   )

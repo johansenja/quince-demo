@@ -148,6 +148,7 @@ button[disabled], button:disabled {
   margin-top: 0;
   border-bottom: none;
   border-color: rgba(0,0,0,0.1);
+  border-width: 2px;
 }
 
 .source_tabs {
@@ -163,7 +164,6 @@ button[disabled], button:disabled {
   list-style: none;
   flex: 1;
   border-top: 1px solid rgba(0,0,0,0.1);
-  border-bottom: 1px solid rgba(0,0,0,0.1);
   padding: 8px 0;
   cursor: pointer;
 }

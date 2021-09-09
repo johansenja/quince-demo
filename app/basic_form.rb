@@ -1,4 +1,4 @@
-class BasicForm < Respond::Component
+class BasicForm < Quince::Component
   State(
     name: String,
     age: Integer,
@@ -27,21 +27,22 @@ class BasicForm < Respond::Component
     state.complete = errors.empty?
   end
 
-  def render
-    if state.complete and state.errors.empty?
-      confirmation = section(
-        h4(
-          span(
-            "Thanks for your submission (name: #{state.name}, age: #{state.age}, Favourite colour: "
-          ),
-          span(style: "color: #{state.favourite_colour}") { state.favourite_colour },
-          span(")"),
-        )
+  private def confirmation
+    section(
+      h4(
+        span(
+          "Thanks for your submission (name: #{state.name}, age: #{state.age}, Favourite colour: "
+        ),
+        span(style: "color: #{state.favourite_colour}") { state.favourite_colour },
+        span(")"),
       )
-      return confirmation
-    end
-    errors = ul(state.errors.map { |e| li(e) }) unless state.errors.empty?
+    )
+  end
 
+  def render
+    return confirmation if state.complete
+
+    errors = ul(state.errors.map { |e| li(e) }) unless state.errors.empty?
     section(
       form(onsubmit: method(:process_form)) {
         [

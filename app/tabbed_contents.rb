@@ -1,6 +1,6 @@
 require "rouge"
 
-class Tabs < Respond::Component
+class Tabs < Quince::Component
   Props(
     set_demo_active: Method,
     set_code_active: Method,
@@ -28,7 +28,7 @@ class Tabs < Respond::Component
   end
 end
 
-class CodePanel < Respond::Component
+class CodePanel < Quince::Component
   Props(
     code: String,
   )
@@ -44,10 +44,10 @@ class CodePanel < Respond::Component
   end
 end
 
-class TabbedContents < Respond::Component
+class TabbedContents < Quince::Component
   Props(
-    code: Respond::Component,
-    demo: Respond::Component,
+    code: Quince::Component,
+    demo: Quince::Component,
   )
 
   State(

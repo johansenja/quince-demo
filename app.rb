@@ -1,12 +1,12 @@
 require "method_source"
+require "quince_sinatra"
 
-require_relative "../../respond-sinatra/lib/respond_sinatra"
-require_relative "show_hide"
-require_relative "counter"
-require_relative "basic_form"
-require_relative "tabbed_contents"
+require_relative "app/show_hide"
+require_relative "app/counter"
+require_relative "app/basic_form"
+require_relative "app/tabbed_contents"
 
-class Index < Respond::Component
+class Index < Quince::Component
   def render
     Layout() {
       Content()
@@ -14,7 +14,7 @@ class Index < Respond::Component
   end
 end
 
-class Content < Respond::Component
+class Content < Quince::Component
   State(
     page: Rbs("'counter' | 'show_hide' | 'basic_form' | Undefined"),
   )
@@ -70,7 +70,7 @@ class Content < Respond::Component
 
     div(
       header(
-        h1("Respond component examples"),
+        h1("Quince component examples"),
       ),
       main(
         nav(
@@ -88,7 +88,7 @@ class Content < Respond::Component
   end
 end
 
-class Layout < Respond::Component
+class Layout < Quince::Component
   def render
     html(
       head(
