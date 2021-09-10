@@ -92,7 +92,7 @@ class Layout < Quince::Component
   def render
     html(
       head(
-        title("Smoke tests"),
+        title("Quince rb"),
         link(href: "/style.css", rel: :stylesheet),
         internal_scripts,
       ),
