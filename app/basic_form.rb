@@ -7,16 +7,18 @@ class BasicForm < Quince::Component
     complete: Rbs("true | false"),
   )
 
-  self.initial_state = {
-    name: "",
-    age: 0,
-    favourite_colour: "",
-    errors: [],
-    complete: false,
-  }
+  def initialize
+    @state = State.new(
+      name: "",
+      age: 0,
+      favourite_colour: "",
+      errors: [],
+      complete: false,
+    )
+  end
 
-  exposed def process_form(params)
-    name, age, colour = params.values_at(:name, :age, :favourite_colour)
+  exposed def process_form
+    name, age, colour = params[:params].values_at(:name, :age, :favourite_colour)
     state.name = name
     state.age = age.to_i
     state.favourite_colour = colour

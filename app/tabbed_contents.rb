@@ -54,9 +54,11 @@ class TabbedContents < Quince::Component
     current_tab: Rbs("'demo' | 'code'"),
   )
 
-  self.initial_state = {
-    current_tab: "demo",
-  }
+  def initialize
+    @state = State.new(
+      current_tab: "demo",
+    )
+  end
 
   exposed def set_demo_active
     state.current_tab = "demo"

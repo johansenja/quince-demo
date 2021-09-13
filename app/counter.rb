@@ -1,9 +1,11 @@
 class Counter < Quince::Component
   State(val: Integer)
 
-  self.initial_state = {
-    val: 0,
-  }
+  def initialize
+    @state = State.new(
+      val: 0,
+    )
+  end
 
   exposed def increment
     state.val += 1

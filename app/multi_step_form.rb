@@ -6,20 +6,22 @@ class MultiStepForm < Quince::Component
     current_step: Integer,
   )
 
-  self.initial_state = {
-    step0: {
-      first_name: "",
-      last_name: "",
-      favourite_food: "",
-    },
-    step1: {
-      favourite_car: "",
-    },
-    step2: {
-      spaghetti: "",
-    },
-    current_step: 0,
-  }
+  def initialize
+    @state = State.new(
+      step0: {
+        first_name: "",
+        last_name: "",
+        favourite_food: "",
+      },
+      step1: {
+        favourite_car: "",
+      },
+      step2: {
+        spaghetti: "",
+      },
+      current_step: 0,
+    )
+  end
 
   exposed def process_form
   end

@@ -6,10 +6,10 @@ GEM
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.5.8)
-    oj (3.13.5)
+    oj (3.13.6)
     puma (5.4.0)
       nio4r (~> 2.0)
-    quince (0.1.2)
+    quince (0.2.0)
       oj (~> 3.13)
       typed_struct (>= 0.1.4)
     quince_sinatra (0.1.2)
@@ -47,6 +47,7 @@ PLATFORMS
 DEPENDENCIES
   method_source (~> 1.0)
   puma (~> 5.4)
+  quince (~> 0.2)
   quince_sinatra (~> 0.1)
   rouge (~> 3.26)
 

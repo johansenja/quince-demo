@@ -19,9 +19,11 @@ class Content < Quince::Component
     page: Rbs("'counter' | 'show_hide' | 'basic_form' | Undefined"),
   )
 
-  self.initial_state = {
-    page: "counter",
-  }
+  def initialize
+    @state = State.new(
+      page: params.fetch(:page, "counter"),
+    )
+  end
 
   exposed def set_counter
     state.page = "counter"

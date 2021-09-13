@@ -11,9 +11,11 @@ class ToggleVisibilitySection < Quince::Component
     para_visible: Rbs("TrueClass | FalseClass"),
   )
 
-  self.initial_state = {
-    para_visible: false,
-  }
+  def initialize
+    @state = State.new(
+      para_visible: false,
+    )
+  end
 
   exposed def toggle_para_visible
     state.para_visible = !state.para_visible
