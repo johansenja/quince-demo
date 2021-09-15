@@ -66,7 +66,7 @@ class Autocomplete < Quince::Component
       form(action: "javascript:void") {[
         input(
           value: state.val,
-          onblur: method(:set_val),
+          onblur: callback(:set_val, take_form_values: true),
           placeholder: "Start searching...",
           list: LIST_ID,
           name: :val,

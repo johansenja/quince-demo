@@ -42,9 +42,9 @@ class Content < Quince::Component
     state.page = 'autocomplete'
   end
 
-  private def render_li(meth, label, active)
+  private def render_li(clbck, label, active)
     li(Class: active ? "active" : Undefined) {
-      button(onclick: meth) { label }
+      button(onclick: clbck) { label }
     }
   end
 
@@ -89,10 +89,10 @@ class Content < Quince::Component
       main(
         nav(
           ul(
-            render_li(method(:set_counter), "Increment a counter", state.page == "counter"),
-            render_li(method(:set_show_hide), "Show/hide some text", state.page == "show_hide"),
-            render_li(method(:set_basic_form), "Basic form", state.page == "basic_form"),
-            render_li(method(:set_autocomplete), "Basic text input autocomplete", state.page == "autocomplete"),
+            render_li(callback(:set_counter), "Increment a counter", state.page == "counter"),
+            render_li(callback(:set_show_hide), "Show/hide some text", state.page == "show_hide"),
+            render_li(callback(:set_basic_form), "Basic form", state.page == "basic_form"),
+            render_li(callback(:set_autocomplete), "Basic text input autocomplete", state.page == "autocomplete"),
             li(button(disabled: true) { "Multi step form - coming soon" }),
             li(button(disabled: true) { "Infinite scroll - coming soon" }),
           )

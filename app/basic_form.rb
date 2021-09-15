@@ -46,7 +46,7 @@ class BasicForm < Quince::Component
 
     errors = ul(state.errors.map { |e| li(e) }) unless state.errors.empty?
     section(
-      form(onsubmit: method(:process_form)) {
+      form(onsubmit: callback(:process_form, take_form_values: true, prevent_default: true)) {
         [
           div(Class: "inputgroup") {
             [

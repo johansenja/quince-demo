@@ -113,7 +113,7 @@ class MultiStepForm < Quince::Component
       when 4
         return div(
                  para("Thanks for submitting!"),
-                 button(onclick: method(:reset)) { "Reset" },
+                 button(onclick: callback(:reset)) { "Reset" },
                )
       end
 
