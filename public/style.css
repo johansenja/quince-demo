@@ -187,3 +187,25 @@ pre {
 pre span {
   background-color: transparent !important;
 }
+
+#autocomplete {
+  width: 100%;
+  text-align: center;
+}
+
+#autocomplete pre {
+  text-align: left;
+}
+
+#autocomplete #selected_code_wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+code {
+  font-size: 1.3em;
+  background-color: blanchedalmond;
+  color: darkred;
+  padding: 2px 4px;
+  font-style: italic;
+}

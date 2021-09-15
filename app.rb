@@ -5,6 +5,7 @@ require_relative "app/show_hide"
 require_relative "app/counter"
 require_relative "app/basic_form"
 require_relative "app/tabbed_contents"
+require_relative "app/autocomplete"
 
 class Index < Quince::Component
   def render
@@ -16,7 +17,7 @@ end
 
 class Content < Quince::Component
   State(
-    page: Rbs("'counter' | 'show_hide' | 'basic_form' | Undefined"),
+    page: Rbs("'counter' | 'show_hide' | 'basic_form' | 'autocomplete' | Undefined"),
   )
 
   def initialize
@@ -35,6 +36,10 @@ class Content < Quince::Component
 
   exposed def set_basic_form
     state.page = "basic_form"
+  end
+
+  exposed def set_autocomplete
+    state.page = 'autocomplete'
   end
 
   private def render_li(meth, label, active)
@@ -66,6 +71,13 @@ class Content < Quince::Component
             code: MethodSource.source_helper(Object.const_source_location("BasicForm")),
           ),
         )
+      when "autocomplete"
+        TabbedContents(
+          demo: Autocomplete(),
+          code: CodePanel(
+            code: MethodSource.source_helper(Object.const_source_location("Autocomplete"))
+          )
+        )
       when nil, Undefined
         section
       end
@@ -80,6 +92,7 @@ class Content < Quince::Component
             render_li(method(:set_counter), "Increment a counter", state.page == "counter"),
             render_li(method(:set_show_hide), "Show/hide some text", state.page == "show_hide"),
             render_li(method(:set_basic_form), "Basic form", state.page == "basic_form"),
+            render_li(method(:set_autocomplete), "Basic text input autocomplete", state.page == "autocomplete"),
             li(button(disabled: true) { "Multi step form - coming soon" }),
             li(button(disabled: true) { "Infinite scroll - coming soon" }),
           )
