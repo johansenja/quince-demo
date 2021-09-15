@@ -2,8 +2,8 @@ require "rouge"
 
 class Tabs < Quince::Component
   Props(
-    set_demo_active: Quince::Callback::Base,
-    set_code_active: Quince::Callback::Base,
+    set_demo_active: Quince::Callback::Interface,
+    set_code_active: Quince::Callback::Interface,
     current_tab: Rbs("'demo' | 'code'"),
   )
 
