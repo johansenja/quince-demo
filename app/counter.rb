@@ -19,9 +19,9 @@ class Counter < Quince::Component
     section(
       div(id: :count_container) {
         [
-          button(onclick: method(:increment), id: :increment, Class: "btn-lg") { "++" },
+          button(onclick: callback(:increment), id: :increment, Class: "btn-lg") { "++" },
           h3("Count: #{state.val}"),
-          button(onclick: method(:decrement), id: :decrement, Class: "btn-lg") { "--" },
+          button(onclick: callback(:decrement), id: :decrement, Class: "btn-lg") { "--" },
         ]
       }
     )

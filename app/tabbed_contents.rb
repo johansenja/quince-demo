@@ -2,8 +2,8 @@ require "rouge"
 
 class Tabs < Quince::Component
   Props(
-    set_demo_active: Method,
-    set_code_active: Method,
+    set_demo_active: Quince::Callback::Base,
+    set_code_active: Quince::Callback::Base,
     current_tab: Rbs("'demo' | 'code'"),
   )
 
@@ -71,8 +71,8 @@ class TabbedContents < Quince::Component
   def render
     section(
       Tabs(
-        set_demo_active: method(:set_demo_active),
-        set_code_active: method(:set_code_active),
+        set_demo_active: callback(:set_demo_active),
+        set_code_active: callback(:set_code_active),
         current_tab: state.current_tab,
       ),
       state.current_tab == "code" ? pre(props.code) : props.demo,
