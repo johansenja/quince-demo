@@ -107,6 +107,9 @@ class Layout < Quince::Component
     html(
       head(
         title("Quince rb"),
+        link(rel: :preconnect, href: "https://fonts.googleapis.com"),
+        link(rel: :preconnect, href: "https://fonts.gstatic.com", crossorigin: ""),
+        link(href: "https://fonts.googleapis.com/css2?family=PT+Sans&display=swap", rel: :stylesheet),
         link(href: "/style.css", rel: :stylesheet),
         internal_scripts,
       ),
