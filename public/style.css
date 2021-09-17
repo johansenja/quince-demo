@@ -3,50 +3,73 @@ body {
   height: 100vh;
   margin: 0;
   font-family: Futura, sans-serif;
-  display: flex;
 }
 
 body > div {
-  width: 100%;
   display: flex;
   flex-direction: column;
+  height: 100%;
+}
+
+body > div > header {
+  flex: 0 0 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: blanchedalmond;
 }
 
 header h1 {
   text-align: center;
-  background-color: blanchedalmond;
-  padding: 16px 0;
+  padding: 0;
   text-transform: uppercase;
   margin: 0;
 }
 
 main {
   display: flex;
-  flex-direction: row;
+  max-height: calc(100% - 75px);
   flex: 1;
 }
 
 main > section {
-  flex: 3 0;
   padding-top: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
+  flex: 1;
+  overflow-y: hidden;
+}
+
+#content_wrapper {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#content_wrapper section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 64px;
 }
 
 main > nav {
   text-align: center;
   margin: 0;
-  flex: 1 1;
-  max-width: 400px;
+  flex: 0 1 375px;
+  display: flex;
+  flex-direction: column;
+  background-color: #456;
+}
+
+main > nav footer {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column-gap: 25%;
 }
 
 main > nav ul {
   margin: 0;
   padding-left: 0;
-  background-color: #456;
-  height: 100%;
+  flex: 1;
 }
 
 main > nav li {
@@ -111,11 +134,15 @@ button[disabled], button:disabled {
 #increment {
   background-color: rgba(10,175,10,0.75);
   color: blanchedalmond;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 #decrement {
   background-color: rgba(175,10,10,0.75);
   color: blanchedalmond;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 #show-hide {
@@ -182,6 +209,7 @@ pre {
   background-color: #456;
   padding: 24px;
   border-radius: 3px;
+  overflow: scroll;
 }
 
 pre span {
@@ -209,3 +237,27 @@ code {
   padding: 2px 4px;
   font-style: italic;
 }
+
+#syntax_highlighting_code_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#intro {
+  padding-bottom: 48px;
+}
+
+#intro p {
+  margin-bottom: 32px;
+  font-size: 1.1rem;
+}
+
+blockquote {
+  border-left: 4px solid rgba(200,200,200, 0.5);
+  margin-bottom: 32px;
+  color: rgba(100,100,100);
+  padding-left: 24px;
+  margin-left: 0;
+}
+

@@ -6,6 +6,8 @@ require_relative "app/counter"
 require_relative "app/basic_form"
 require_relative "app/tabbed_contents"
 require_relative "app/autocomplete"
+require_relative "app/syntax_highlighting"
+require_relative "app/introduction"
 
 class Index < Quince::Component
   def render
@@ -17,70 +19,57 @@ end
 
 class Content < Quince::Component
   State(
-    page: Rbs("'counter' | 'show_hide' | 'basic_form' | 'autocomplete' | Undefined"),
+    page: Rbs(":intro | :counter | :show_hide | :basic_form | :autocomplete | :syntax_highlighting | Undefined"),
   )
 
   def initialize
     @state = State.new(
-      page: params.fetch(:page, "counter"),
+      page: params.fetch(:page, :intro),
     )
   end
 
   exposed def set_counter
-    state.page = "counter"
+    state.page = :counter
   end
 
   exposed def set_show_hide
-    state.page = "show_hide"
+    state.page = :show_hide
   end
 
   exposed def set_basic_form
-    state.page = "basic_form"
+    state.page = :basic_form
   end
 
   exposed def set_autocomplete
-    state.page = 'autocomplete'
+    state.page = :autocomplete
+  end
+
+  exposed def set_syntax
+    state.page = :syntax_highlighting
+  end
+
+  exposed def set_intro
+    state.page = :intro
   end
 
   private def render_li(clbck, label, active)
-    li(Class: active ? "active" : Undefined) {
+    li(Class: active ? :active : Undefined) {
       button(onclick: clbck) { label }
     }
   end
 
+  COMPONENT_BY_PAGE_STATE = {
+    intro: "Introduction",
+    counter: "Counter",
+    show_hide: "ToggleVisibilitySection",
+    basic_form: "BasicForm",
+    autocomplete: "Autocomplete",
+    syntax_highlighting: "SyntaxHighlightingDemo"
+  }.freeze
+
   def render
-    content = case state.page
-      when "counter"
-        TabbedContents(
-          demo: Counter(),
-          code: CodePanel(
-            code: MethodSource.source_helper(Object.const_source_location("Counter")),
-          ),
-        )
-      when "show_hide"
-        TabbedContents(
-          demo: ShowHide(),
-          code: CodePanel(
-            code: MethodSource.source_helper(Object.const_source_location("ToggleVisibilitySection")),
-          ),
-        )
-      when "basic_form"
-        TabbedContents(
-          demo: BasicForm(),
-          code: CodePanel(
-            code: MethodSource.source_helper(Object.const_source_location("BasicForm")),
-          ),
-        )
-      when "autocomplete"
-        TabbedContents(
-          demo: Autocomplete(),
-          code: CodePanel(
-            code: MethodSource.source_helper(Object.const_source_location("Autocomplete"))
-          )
-        )
-      when nil, Undefined
-        section
-      end
+    component = COMPONENT_BY_PAGE_STATE[state.page]
+    content = component ? TabbedContents(const: component) : section
 
     div(
       header(
@@ -89,12 +78,22 @@ class Content < Quince::Component
       main(
         nav(
           ul(
-            render_li(callback(:set_counter), "Increment a counter", state.page == "counter"),
-            render_li(callback(:set_show_hide), "Show/hide some text", state.page == "show_hide"),
-            render_li(callback(:set_basic_form), "Basic form", state.page == "basic_form"),
-            render_li(callback(:set_autocomplete), "Basic text input autocomplete", state.page == "autocomplete"),
+            render_li(callback(:set_intro), "Introduction", state.page == :intro),
+            render_li(callback(:set_counter), "Increment a counter", state.page == :counter),
+            render_li(callback(:set_show_hide), "Show/hide some text", state.page == :show_hide),
+            render_li(callback(:set_syntax), "Server-rendered syntax highlighting", state.page == :syntax_highlighting),
+            render_li(callback(:set_basic_form), "Basic form", state.page == :basic_form),
+            render_li(callback(:set_autocomplete), "Basic text input autocomplete", state.page == :autocomplete),
             li(button(disabled: true) { "Multi step form - coming soon" }),
             li(button(disabled: true) { "Infinite scroll - coming soon" }),
+          ),
+          footer(
+            a(href: "https://github.com/johansenja/quince", title: "See Quince on GitHub") {
+              img(src: "/github_logo_white.png", alt: "GitHub Logo", height: 40, width: 40)
+            },
+            a(href: "https://rubygems.org/gems/quince", title: "See Quince on RubyGems") {
+              img(src: "/rubygems_logo.png", alt: "RubyGems Logo", height: 40, width: 40)
+            },
           )
         ),
         content

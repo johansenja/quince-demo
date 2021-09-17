@@ -15,10 +15,11 @@ class Autocomplete < Quince::Component
   OBJECT_METHODS = Object.methods.to_set
   INPUT_WIDTH = "250px".freeze
   LIST_ID = "#{COMPLETED_CLASS.name.downcase}_methods".freeze
+  FULL_OPTIONS = (COMPLETED_CLASS.instance_methods - OBJECT_METHODS.to_a).sort.freeze
 
   private def render_options
     datalist(style: "width: #{INPUT_WIDTH}", id: LIST_ID) {
-      (COMPLETED_CLASS.instance_methods - OBJECT_METHODS.to_a).sort.map do |v|
+      FULL_OPTIONS.map do |v|
         option(value: v.to_s) { v.to_s }
       end
     }
@@ -41,9 +42,7 @@ class Autocomplete < Quince::Component
     source = begin
                code = method.comment + method.source
                div(id: :selected_code_wrapper) {
-                 pre(
-                   CodePanel(code: code)
-                 )
+                 CodePanel(code: code)
                }
              rescue MethodSource::SourceNotFoundError
                para "No source information available"

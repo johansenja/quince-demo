@@ -30,24 +30,37 @@ end
 
 class CodePanel < Quince::Component
   Props(
-    code: String,
+    const: Quince::Types::OptionalString,
+    code: Quince::Types::OptionalString,
   )
+
+  private def get_code
+    return props.code unless props.code == Undefined
+
+    MethodSource.source_helper(
+      Object.const_source_location(props.const)
+    )
+  end
 
   def render
     theme = Rouge::Themes::Gruvbox.new
     formatter = Rouge::Formatters::HTMLInline.new(theme)
-    formatter.format(
+
+    generated_html = formatter.format(
       Rouge::Lexers::Ruby.new.lex(
-        props.code
+        get_code
       )
+    )
+
+    pre(
+      generated_html
     )
   end
 end
 
 class TabbedContents < Quince::Component
   Props(
-    code: Quince::Component,
-    demo: Quince::Component,
+    const: String
   )
 
   State(
@@ -69,13 +82,20 @@ class TabbedContents < Quince::Component
   end
 
   def render
+    contents = if state.current_tab == "code"
+                 section(CodePanel(const: props.const))
+               else
+                 send props.const
+               end
     section(
       Tabs(
         set_demo_active: callback(:set_demo_active),
         set_code_active: callback(:set_code_active),
         current_tab: state.current_tab,
       ),
-      state.current_tab == "code" ? pre(props.code) : props.demo,
+      div(id: :content_wrapper) {
+        contents
+      }
     )
   end
 end

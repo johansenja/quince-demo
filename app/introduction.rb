@@ -42,7 +42,7 @@ class Introduction < Quince::Component
         strong("only"),
         " be done on the front end. Quince also provides you with the building blocks to write some of ",
         " your own JavaScript code so you can integrate it with the rest of the app. ",
-        %q{For instance, see the "Infinite scroll" demo for an example of this."}
+        %q{For instance, see the "Infinite scroll" demo for an example of this.}
       ),
       h4(
         "Also note that Quince is still in early development, so is likely to be unstable for the first ",

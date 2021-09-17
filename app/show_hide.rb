@@ -22,7 +22,7 @@ class ToggleVisibilitySection < Quince::Component
   end
 
   def render
-    div(
+    section(
       state.para_visible ? para("This is the secret message") : nil,
       button(onclick: callback(:toggle_para_visible), Class: "btn-lg", id: "show-hide") {
         "#{state.para_visible ? "Hide" : "Show"} secret message"
