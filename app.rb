@@ -8,6 +8,7 @@ require_relative "app/tabbed_contents"
 require_relative "app/autocomplete"
 require_relative "app/syntax_highlighting"
 require_relative "app/introduction"
+require_relative "app/infinite_scroll"
 
 class Index < Quince::Component
   def render
@@ -19,7 +20,9 @@ end
 
 class Content < Quince::Component
   State(
-    page: Rbs(":intro | :counter | :show_hide | :basic_form | :autocomplete | :syntax_highlighting | Undefined"),
+    page: Rbs(
+      ":intro | :counter | :show_hide | :basic_form | :autocomplete | :syntax_highlighting | :infinite_scroll | Undefined"
+    ),
   )
 
   def initialize
@@ -52,6 +55,10 @@ class Content < Quince::Component
     state.page = :intro
   end
 
+  exposed def set_infinite_scroll
+    state.page = :infinite_scroll
+  end
+
   private def render_li(clbck, label, active)
     li(Class: active ? :active : Undefined) {
       button(onclick: clbck) { label }
@@ -64,7 +71,8 @@ class Content < Quince::Component
     show_hide: "ToggleVisibilitySection",
     basic_form: "BasicForm",
     autocomplete: "Autocomplete",
-    syntax_highlighting: "SyntaxHighlightingDemo"
+    syntax_highlighting: "SyntaxHighlightingDemo",
+    infinite_scroll: "InfiniteScroll",
   }.freeze
 
   def render
@@ -84,8 +92,8 @@ class Content < Quince::Component
             render_li(callback(:set_syntax), "Server-rendered syntax highlighting", state.page == :syntax_highlighting),
             render_li(callback(:set_basic_form), "Basic form", state.page == :basic_form),
             render_li(callback(:set_autocomplete), "Basic text input autocomplete", state.page == :autocomplete),
+            render_li(callback(:set_infinite_scroll), "Infinite scroll", state.page == :infinite_scroll),
             li(button(disabled: true) { "Multi step form - coming soon" }),
-            li(button(disabled: true) { "Infinite scroll - coming soon" }),
           ),
           footer(
             a(href: "https://github.com/johansenja/quince", title: "See Quince on GitHub") {
