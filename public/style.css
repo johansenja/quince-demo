@@ -261,3 +261,26 @@ blockquote {
   margin-left: 0;
 }
 
+#infinite_scroll table {
+  max-height: 500px;
+  display: block;
+  overflow-y: scroll;
+  box-shadow: 0px -5px 5px rgba(200,200,200,0.55) inset;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+
+#infinite_scroll thead {
+  position: sticky;
+  top: 0;
+}
+
+#infinite_scroll thead th {
+  border-bottom: 3px solid rgb(102, 52, 8);
+  box-shadow: 0px 5px 3px rgba(200,200,200,0.25);
+  background: white;
+}
+
+#infinite_scroll td, #infinite_scroll th {
+  padding: 8px 16px;
+}

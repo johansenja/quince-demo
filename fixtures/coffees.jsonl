@@ -1,0 +1,300 @@
+{"ID":0,"Blend Name":"Huggy Coffee","Origin":"Copan, Honduras","Notes":"vibrant, watery, granola, soil, soy sauce"}
+{"ID":1,"Blend Name":"KrebStar Solstice","Origin":"Opalca, Honduras","Notes":"deep, tea-like, carbon, sage, mango"}
+{"ID":2,"Blend Name":"The Blend","Origin":"Opalca, Honduras","Notes":"clean, watery, nougat, white pepper, lychee"}
+{"ID":3,"Blend Name":"Pumpkin-spice Mug","Origin":"Central Valley, Costa Rica","Notes":"lingering, coating, magnolia, rubber, bergamot"}
+{"ID":4,"Blend Name":"Goodbye Breaker","Origin":"Kibale, Uganda","Notes":"tart, coating, medicinal, lime, jasmine"}
+{"ID":5,"Blend Name":"Spilt Equinox","Origin":"Tolima, Colombia","Notes":"bright, creamy, quakery, sage, quakery"}
+{"ID":6,"Blend Name":"Green Breaker","Origin":"Turrialba, Costa Rica","Notes":"sharp, big, raisin, fresh wood, marshmallow"}
+{"ID":7,"Blend Name":"Veranda Blend","Origin":"Guanacaste, Costa Rica","Notes":"crisp, velvety, plum, nectarine, marzipan"}
+{"ID":8,"Blend Name":"The Captain's Star","Origin":"Western Region, Kigoma, Tanzania","Notes":"clean, creamy, red currant, nutmeg, bergamot"}
+{"ID":9,"Blend Name":"Goodbye Choice","Origin":"Sul Minas, Brazil","Notes":"balanced, big, tamarind, mandarin, snow pea"}
+{"ID":10,"Blend Name":"Café Look","Origin":"Sidama, Ethiopia","Notes":"soft, velvety, banana, lavender, orange blossom"}
+{"ID":11,"Blend Name":"Evening Blend","Origin":"Kirinyaga, Kenya","Notes":"dry, chewy, rose hips, quakery, butter"}
+{"ID":12,"Blend Name":"American Coffee","Origin":"Mbeya Region, Tanzania","Notes":"faint, syrupy, barley, pecan, prune"}
+{"ID":13,"Blend Name":"Good-morning Java","Origin":"Nakuru, Kenya","Notes":"soft, coating, milk chocolate, lemon verbena, medicinal"}
+{"ID":14,"Blend Name":"Street Star","Origin":"Travancore, India","Notes":"pointed, big, hops, orange blossom, clove"}
+{"ID":15,"Blend Name":"Jacked Equinox","Origin":"Nilgiris, India","Notes":"pointed, big, concord grape, lemon verbena, walnut"}
+{"ID":16,"Blend Name":"American Solstice","Origin":"Mount Elgon, Uganda","Notes":"dry, velvety, grapefruit, squash, hay"}
+{"ID":17,"Blend Name":"Strong Cup","Origin":"Cerrado, Brazil","Notes":"sharp, silky, medicinal, dill, fresh wood"}
+{"ID":18,"Blend Name":"Summer America","Origin":"Gayo, Sumatra","Notes":"soft, coating, medicinal, rose hips, sugar cane"}
+{"ID":19,"Blend Name":"The Town","Origin":"Southern Region, Mbinga, Tanzania","Notes":"dirty, big, soy sauce, clementine, grapefruit"}
+{"ID":20,"Blend Name":"The Solstice","Origin":"Lake Kivu Region, Rwanda","Notes":"quick, silky, peach, lemonade, cedar"}
+{"ID":21,"Blend Name":"Bluebery Pie","Origin":"Limu, Ethiopia","Notes":"lingering, chewy, coconut, curry, black currant"}
+{"ID":22,"Blend Name":"Brooklyn Town","Origin":"Ojimmah, Ethiopia","Notes":"dirty, chewy, jasmine, leathery, cantaloupe"}
+{"ID":23,"Blend Name":"Captain's Java","Origin":"Antigua, Guatemala","Notes":"delicate, velvety, apricot, papaya, clementine"}
+{"ID":24,"Blend Name":"American Been","Origin":"Chiapas, Mexico","Notes":"soft, round, mandarin, figs, lime"}
+{"ID":25,"Blend Name":"The Captain's Select","Origin":"Hidalgo, Mexico","Notes":"soft, slick, sage, cherry, toast"}
+{"ID":26,"Blend Name":"Chocolate Town","Origin":"Kiamba, Kenya","Notes":"dull, syrupy, squash, toast, honeydew"}
+{"ID":27,"Blend Name":"Reg's Choice","Origin":"Bugisu, Uganda","Notes":"astringent, tea-like, wheat, nectarine, marzipan"}
+{"ID":28,"Blend Name":"Street Nuts","Origin":"Cerrado, Brazil","Notes":"faint, coating, soy sauce, hibiscus, honeydew"}
+{"ID":29,"Blend Name":"Captain's Bean","Origin":"Volcan, Panama","Notes":"soft, watery, figs, vanilla, mandarin"}
+{"ID":30,"Blend Name":"Pumpkin-spice Level","Origin":"Comayagua, Honduras","Notes":"lingering, smooth, orange creamsicle, passion fruit, magnolia"}
+{"ID":31,"Blend Name":"Dark Pie","Origin":"Volcan, Panama","Notes":"astringent, coating, green pepper, jasmine, lavender"}
+{"ID":32,"Blend Name":"Café Treat","Origin":"Lintong, Sumatra","Notes":"faint, syrupy, white grape, walnut, white pepper"}
+{"ID":33,"Blend Name":"Cascara Treat","Origin":"Aceh, Sumatra","Notes":"deep, watery, curry, maple syrup, raisin"}
+{"ID":34,"Blend Name":"Brooklyn America","Origin":"Mogiana, Brazil","Notes":"wild, creamy, meyer lemon, snow pea, potato defect!"}
+{"ID":35,"Blend Name":"Evening Treat","Origin":"Lintong, Sumatra","Notes":"dense, round, honey, marshmallow, liquorice"}
+{"ID":36,"Blend Name":"Chocolate Blend","Origin":"Boquete, Panama","Notes":"vibrant, slick, lemon verbena, white grape, cream"}
+{"ID":37,"Blend Name":"American Delight","Origin":"Tres Rios, Costa Rica","Notes":"clean, creamy, cashew, burnt sugar, bergamot"}
+{"ID":38,"Blend Name":"Morning Java","Origin":"Kisii, Kenya","Notes":"dense, smooth, walnut, curry, green pepper"}
+{"ID":39,"Blend Name":"Brooklyn Java","Origin":"Lake Tawar, Sumatra","Notes":"vibrant, round, wheat, hibiscus, marshmallow"}
+{"ID":40,"Blend Name":"Pumpkin-spice Equinox","Origin":"Fraijanes, Guatemala","Notes":"juicy, big, black cherry, green pepper, cacao nibs"}
+{"ID":41,"Blend Name":"Summer Utopia","Origin":"Manjarabad, India","Notes":"quick, full, leathery, hazelnut, marzipan"}
+{"ID":42,"Blend Name":"Strong Mug","Origin":"Coban, Guatemala","Notes":"dry, round, passion fruit, blueberry, granola"}
+{"ID":43,"Blend Name":"Reg's Treat","Origin":"Boquete, Panama","Notes":"unbalanced, coating, apricot, green pepper, sugar cane"}
+{"ID":44,"Blend Name":"KrebStar Star","Origin":"Nueva Segovia, Nicaragua","Notes":"balanced, round, brown sugar, kiwi, green apple"}
+{"ID":45,"Blend Name":"Goodbye Enlightenment","Origin":"El Balsamo-Quetzaltepec, El Salvador","Notes":"astringent, silky, green apple, plum, hazelnut"}
+{"ID":46,"Blend Name":"Postmodern Look","Origin":"Mbeya Region, Tanzania","Notes":"astringent, full, snow pea, kiwi, musty"}
+{"ID":47,"Blend Name":"Blacktop America","Origin":"Cerrado, Brazil","Notes":"unbalanced, velvety, hops, walnut, red currant"}
+{"ID":48,"Blend Name":"Melty Bean","Origin":"Embu, Kenya","Notes":"complex, smooth, fresh wood, green-tea, toast"}
+{"ID":49,"Blend Name":"Street Forrester","Origin":"Kabirizi, Rwanda","Notes":"muted, chewy, dill, lemon, corriander"}
+{"ID":50,"Blend Name":"Street Enlightenment","Origin":"Estelí, Nicaragua","Notes":"tart, coating, rye, grapefruit, cacao nibs"}
+{"ID":51,"Blend Name":"Huggy Look","Origin":"Chichontepec, El Salvador","Notes":"dirty, watery, cream, star fruit, cacao nibs"}
+{"ID":52,"Blend Name":"Brooklyn Equinox","Origin":"Boyacá, Colombia","Notes":"juicy, juicy, red apple, cashew, mint"}
+{"ID":53,"Blend Name":"Thanksgiving Solstice","Origin":"Mount Elgon, Uganda","Notes":"mild, slick, mint, tomato, mint"}
+{"ID":54,"Blend Name":"Postmodern Star","Origin":"Jinotega, Nicaragua","Notes":"bright, tea-like, bakers chocolate, carbon, magnolia"}
+{"ID":55,"Blend Name":"Postmodern Been","Origin":"Hidalgo, Mexico","Notes":"delicate, slick, green apple, watermelon, cherry"}
+{"ID":56,"Blend Name":"KrebStar Utopia","Origin":"Wellega, Ethiopia","Notes":"dry, velvety, butter, white grape, burnt sugar"}
+{"ID":57,"Blend Name":"Huggy Mug","Origin":"Nilgiris, India","Notes":"dull, round, orange blossom, white pepper, golden raisin"}
+{"ID":58,"Blend Name":"Blue Nuts","Origin":"Sidama, Ethiopia","Notes":"delicate, silky, raspberry, sugar cane, clementine"}
+{"ID":59,"Blend Name":"Café Star","Origin":"Kayanza, Burundi","Notes":"complex, watery, potato defect!, toast, granola"}
+{"ID":60,"Blend Name":"Joe Level","Origin":"Mbeya Region, Tanzania","Notes":"sharp, slick, molasses, sugar cane, coconut"}
+{"ID":61,"Blend Name":"Express Light","Origin":"Mount Elgon, Uganda","Notes":"muted, creamy, bakers chocolate, magnolia, soy sauce"}
+{"ID":62,"Blend Name":"Holiday Bean","Origin":"Ojimmah, Ethiopia","Notes":"structured, slick, peanut, cranberry, quakery"}
+{"ID":63,"Blend Name":"KrebStar Mug","Origin":"Nyanza, Kenya","Notes":"dense, full, dill, coconut, lemon"}
+{"ID":64,"Blend Name":"Bluebery Cake","Origin":"Cerrado, Brazil","Notes":"structured, syrupy, rye, barley, pineapple"}
+{"ID":65,"Blend Name":"Strong Light","Origin":"Mount Elgon, Uganda","Notes":"wild, big, maple syrup, orange, lychee"}
+{"ID":66,"Blend Name":"Seattle Bean","Origin":"Sul Minas, Brazil","Notes":"crisp, coating, concord grape, green pepper, sugar cane"}
+{"ID":67,"Blend Name":"Morning Town","Origin":"Northern Region, Kilimanjaro, Tanzania","Notes":"pointed, smooth, tobacco, rye, blueberry"}
+{"ID":68,"Blend Name":"The Captain's Been","Origin":"Antigua, Guatemala","Notes":"wild, big, raisin, black currant, bakers chocolate"}
+{"ID":69,"Blend Name":"Bluebery Volcano","Origin":"Rivas, Nicaragua","Notes":"crisp, big, white pepper, meyer lemon, nutella"}
+{"ID":70,"Blend Name":"Summer Blend","Origin":"El Balsamo-Quetzaltepec, El Salvador","Notes":"rounded, chewy, brown sugar, cedar, strawberry"}
+{"ID":71,"Blend Name":"Street Blend","Origin":"Montecillos, Honduras","Notes":"unbalanced, velvety, red apple, cacao nibs, lime"}
+{"ID":72,"Blend Name":"Veranda Look","Origin":"San'ani, Yemen","Notes":"delicate, coating, pecan, tomato, ginger"}
+{"ID":73,"Blend Name":"Heart Been","Origin":"Agalta, Honduras","Notes":"pointed, silky, lemongrass, honeysuckle, peanut"}
+{"ID":74,"Blend Name":"Reg's Enlightenment","Origin":"Hirazi, Yemen","Notes":"dull, tea-like, mandarin, quakery, walnut"}
+{"ID":75,"Blend Name":"Veranda Cake","Origin":"Hidalgo, Mexico","Notes":"quick, round, hibiscus, pineapple, cinnamon"}
+{"ID":76,"Blend Name":"Chocolate Delight","Origin":"Hirazi, Yemen","Notes":"dense, syrupy, orange blossom, lavender, lemon verbena"}
+{"ID":77,"Blend Name":"Hello Mug","Origin":"Ojimmah, Ethiopia","Notes":"rounded, round, maple syrup, potato defect!, jasmine"}
+{"ID":78,"Blend Name":"Veranda Coffee","Origin":"Gayo, Sumatra","Notes":"sharp, chewy, maple syrup, medicinal, smokey"}
+{"ID":79,"Blend Name":"Postmodern Nuts","Origin":"Lake Kivu Region, Rwanda","Notes":"dry, big, orange, nutella, concord grape"}
+{"ID":80,"Blend Name":"Huggy Cup","Origin":"Embu, Kenya","Notes":"dry, silky, soy sauce, marshmallow, tangerine"}
+{"ID":81,"Blend Name":"Brooklyn Utopia","Origin":"San'ani, Yemen","Notes":"crisp, coating, cashew, cranberry, cream"}
+{"ID":82,"Blend Name":"Kreb-Full-o Star","Origin":"Rulindo, Rwanda","Notes":"quick, tea-like, olive, black-tea, star fruit"}
+{"ID":83,"Blend Name":"Joe Been","Origin":"Lintong, Sumatra","Notes":"structured, big, sage, maple syrup, fresh bread"}
+{"ID":84,"Blend Name":"Goodbye Coffee","Origin":"Rivas, Nicaragua","Notes":"dull, silky, lemongrass, wheat, jasmine"}
+{"ID":85,"Blend Name":"Café Blend","Origin":"Oaxaca, Mexico","Notes":"balanced, tea-like, concord grape, clementine, hops"}
+{"ID":86,"Blend Name":"Good-morning Mug","Origin":"Bugisu, Uganda","Notes":"rounded, silky, prune, cream, raisin"}
+{"ID":87,"Blend Name":"The Cake","Origin":"Tres Rios, Costa Rica","Notes":"mild, coating, lemon, carbon, hops"}
+{"ID":88,"Blend Name":"Green Been","Origin":"Tolima, Colombia","Notes":"juicy, slick, jasmine, concord grape, cedar"}
+{"ID":89,"Blend Name":"Goodbye Nuts","Origin":"Bababudangiris, India","Notes":"juicy, creamy, papaya, magnolia, sundried tomato"}
+{"ID":90,"Blend Name":"Postmodern Mug","Origin":"Kayanza, Burundi","Notes":"lingering, big, hibiscus, olive, cinnamon"}
+{"ID":91,"Blend Name":"Evening Light","Origin":"Nyanza, Kenya","Notes":"tart, watery, soil, grapefruit, green grape"}
+{"ID":92,"Blend Name":"Good-morning Cake","Origin":"El Balsamo-Quetzaltepec, El Salvador","Notes":"dense, juicy, squash, ginger, walnut"}
+{"ID":93,"Blend Name":"Reg's Java","Origin":"Wellega, Ethiopia","Notes":"crisp, watery, coconut, honeydew, black currant"}
+{"ID":94,"Blend Name":"Summer ","Origin":"Boquete, Panama","Notes":"crisp, full, star fruit, cocoa powder, peach"}
+{"ID":95,"Blend Name":"Hello Symphony","Origin":"Hidalgo, Mexico","Notes":"vibrant, velvety, potato defect!, hibiscus, meyer lemon"}
+{"ID":96,"Blend Name":"Postmodern Enlightenment","Origin":"Lake Kivu Region, Rwanda","Notes":"bright, watery, squash, butter, white grape"}
+{"ID":97,"Blend Name":"Seattle Star","Origin":"Kigeyo Washing Station, Rwanda","Notes":"clean, chewy, liquorice, honeysuckle, black pepper"}
+{"ID":98,"Blend Name":"Evening Solstice","Origin":"Mount Elgon, Uganda","Notes":"dull, creamy, graham cracker, tangerine, mushroom"}
+{"ID":99,"Blend Name":"Bluebery Blend","Origin":"Atitlan, Guatemala","Notes":"soft, watery, cacao nibs, nutmeg, hibiscus"}
+{"ID":100,"Blend Name":"Huggy Solstice","Origin":"Cundinamarca, Colombia","Notes":"dry, syrupy, bakers chocolate, musty, orange creamsicle"}
+{"ID":101,"Blend Name":"Reg's Solstice","Origin":"Puebla, Mexico","Notes":"vibrant, coating, hibiscus, passion fruit, cedar"}
+{"ID":102,"Blend Name":"Thanksgiving Cup","Origin":"Kayanza, Burundi","Notes":"delicate, chewy, mint, olive, granola"}
+{"ID":103,"Blend Name":"The Symphony","Origin":"San Luis Potosi, Mexico","Notes":"balanced, silky, lavender, black currant, green apple"}
+{"ID":104,"Blend Name":"Hello Level","Origin":"Manjarabad, India","Notes":"quick, slick, plum, orange, walnut"}
+{"ID":105,"Blend Name":"The Captain's Select","Origin":"Mount Elgon, Uganda","Notes":"dull, full, wheat, maple syrup, toast"}
+{"ID":106,"Blend Name":"Joe Enlightenment","Origin":"Nilgiris, India","Notes":"complex, syrupy, white grape, cherry, maple syrup"}
+{"ID":107,"Blend Name":"Winter Look","Origin":"Northern Region, Kilimanjaro, Tanzania","Notes":"dirty, syrupy, lemon verbena, orange, meyer lemon"}
+{"ID":108,"Blend Name":"Veranda Look","Origin":"Kayanza, Burundi","Notes":"delicate, juicy, lemon verbena, rye, soil"}
+{"ID":109,"Blend Name":"Seattle Extract","Origin":"West Valley, Costa Rica","Notes":"vibrant, tea-like, barley, pecan, black-tea"}
+{"ID":110,"Blend Name":"Veranda Look","Origin":"Boaco, Nicaragua","Notes":"dull, juicy, hay, raisin, marzipan"}
+{"ID":111,"Blend Name":"Jacked Java","Origin":"Nayarit, Mexico","Notes":"astringent, velvety, nutmeg, soil, kiwi"}
+{"ID":112,"Blend Name":"Winter Mug","Origin":"Bugisu, Uganda","Notes":"dry, syrupy, smokey, cherry, orange blossom"}
+{"ID":113,"Blend Name":"Pumpkin-spice Java","Origin":"Cacahuatique, El Salvador","Notes":"dirty, big, smokey, dill, clementine"}
+{"ID":114,"Blend Name":"Kreb-Full-o Pie","Origin":"Atitlan, Guatemala","Notes":"crisp, full, carmel, raisin, cola"}
+{"ID":115,"Blend Name":"Joe Town","Origin":"Coban, Guatemala","Notes":"lingering, watery, rye, lemon verbena, cedar"}
+{"ID":116,"Blend Name":"Brooklyn Treat","Origin":"Nariño, Colombia","Notes":"quick, coating, butter, red currant, black-tea"}
+{"ID":117,"Blend Name":"Goodbye Blend","Origin":"Brunca, Costa Rica","Notes":"deep, coating, sage, green pepper, soy sauce"}
+{"ID":118,"Blend Name":"Thanksgiving Cup","Origin":"Lake Tawar, Sumatra","Notes":"juicy, chewy, almond, pecan, fresh bread"}
+{"ID":119,"Blend Name":"Red Breaker","Origin":"Kayanza, Burundi","Notes":"clean, chewy, honeydew, leafy greens, peanut"}
+{"ID":120,"Blend Name":"Dark Forrester","Origin":"Wellega, Ethiopia","Notes":"quick, slick, cola, mint, star fruit"}
+{"ID":121,"Blend Name":"Captain's Blend","Origin":"Boquete, Panama","Notes":"crisp, smooth, red currant, grassy, medicinal"}
+{"ID":122,"Blend Name":"Green Select","Origin":"Kibale, Uganda","Notes":"mild, watery, hibiscus, lemonade, hazelnut"}
+{"ID":123,"Blend Name":"Jacked Coffee","Origin":"Bababudangiris, India","Notes":"deep, velvety, cantaloupe, potato defect!, sundried tomato"}
+{"ID":124,"Blend Name":"Major Equinox","Origin":"Apaneca-Ilamatepec, El Salvador","Notes":"juicy, big, hay, soil, ginger"}
+{"ID":125,"Blend Name":"Good-morning Choice","Origin":"Western Region, Tarime, Tanzania","Notes":"structured, slick, baggy, hops, orange creamsicle"}
+{"ID":126,"Blend Name":"Strong Light","Origin":"Estelí, Nicaragua","Notes":"crisp, syrupy, quakery, musty, cocoa powder"}
+{"ID":127,"Blend Name":"Chocolate America","Origin":"Acatenango, Guatemala","Notes":"sharp, slick, raisin, barley, sage"}
+{"ID":128,"Blend Name":"Holiday Star","Origin":"Kiamba, Kenya","Notes":"juicy, silky, fresh bread, olive, red grape"}
+{"ID":129,"Blend Name":"Cascara Volcano","Origin":"Lintong, Sumatra","Notes":"astringent, velvety, vanilla, almond, lemongrass"}
+{"ID":130,"Blend Name":"KrebStar Utopia","Origin":"Comayagua, Honduras","Notes":"tart, big, green apple, green apple, musty"}
+{"ID":131,"Blend Name":"Wake-up Forrester","Origin":"Kabirizi, Rwanda","Notes":"clean, watery, grassy, barley, plum"}
+{"ID":132,"Blend Name":"Huggy Mug","Origin":"Brahmaputra, India","Notes":"clean, juicy, lemon, cola, honey"}
+{"ID":133,"Blend Name":"Hello Volcano","Origin":"Atitlan, Guatemala","Notes":"pointed, silky, grapefruit, cherry, black pepper"}
+{"ID":134,"Blend Name":"Strong Extract","Origin":"Kayanza, Burundi","Notes":"dense, slick, medicinal, milk chocolate, tobacco"}
+{"ID":135,"Blend Name":"Joe Town","Origin":"Chichontepec, El Salvador","Notes":"quick, syrupy, apricot, snow pea, corriander"}
+{"ID":136,"Blend Name":"Bluebery Star","Origin":"Mattari, Yemen","Notes":"structured, velvety, peach, orange, pecan"}
+{"ID":137,"Blend Name":"Seattle Symphony","Origin":"Guanacaste, Costa Rica","Notes":"astringent, chewy, prune, blueberry, cedar"}
+{"ID":138,"Blend Name":"The Captain's Forrester","Origin":"Guanacaste, Costa Rica","Notes":"tart, coating, olive, honey, corriander"}
+{"ID":139,"Blend Name":"KrebStar Town","Origin":"Estelí, Nicaragua","Notes":"sharp, juicy, bittersweet chocolate, snow pea, liquorice"}
+{"ID":140,"Blend Name":"Blacktop Enlightenment","Origin":"Boquete, Panama","Notes":"sharp, smooth, fresh wood, star fruit, white grape"}
+{"ID":141,"Blend Name":"Postmodern Choice","Origin":"San Marcos, Guatemala","Notes":"dense, watery, vanilla, hay, fresh bread"}
+{"ID":142,"Blend Name":"Express Coffee","Origin":"Turrialba, Costa Rica","Notes":"wild, syrupy, pecan, green pepper, blueberry"}
+{"ID":143,"Blend Name":"American Mug","Origin":"Bababudangiris, India","Notes":"wild, big, lime, lime, cocoa powder"}
+{"ID":144,"Blend Name":"Huggy America","Origin":"Kayanza, Burundi","Notes":"tart, chewy, mushroom, quakery, orange"}
+{"ID":145,"Blend Name":"Reg's Nuts","Origin":"Nuevo Oriente, Guatemala","Notes":"dense, juicy, cacao nibs, black currant, papaya"}
+{"ID":146,"Blend Name":"Kreb-Full-o Bean","Origin":"Lintong, Sumatra","Notes":"dull, round, red apple, passion fruit, white pepper"}
+{"ID":147,"Blend Name":"Goodbye Cake","Origin":"Tolima, Colombia","Notes":"bright, slick, soy sauce, bittersweet chocolate, bergamot"}
+{"ID":148,"Blend Name":"Summer Been","Origin":"Lake Kivu Region, Rwanda","Notes":"soft, round, olive, orange blossom, cherry"}
+{"ID":149,"Blend Name":"Morning Cup","Origin":"Sul Minas, Brazil","Notes":"balanced, juicy, soil, bakers chocolate, white grape"}
+{"ID":150,"Blend Name":"Goodbye Choice","Origin":"Meru, Kenya","Notes":"crisp, coating, squash, olive, squash"}
+{"ID":151,"Blend Name":"Green Level","Origin":"Hirazi, Yemen","Notes":"quick, syrupy, peanut, mango, lemongrass"}
+{"ID":152,"Blend Name":"Joe Light","Origin":"Volcan, Panama","Notes":"complex, full, sage, graham cracker, dates"}
+{"ID":153,"Blend Name":"KrebStar Forrester","Origin":"West Valley, Costa Rica","Notes":"dirty, smooth, snow pea, hay, sage"}
+{"ID":154,"Blend Name":"American Extract","Origin":"Nariño, Colombia","Notes":"mild, round, corriander, magnolia, soil"}
+{"ID":155,"Blend Name":"Jacked Cowboy","Origin":"Cacahuatique, El Salvador","Notes":"bright, chewy, baggy, black currant, green pepper"}
+{"ID":156,"Blend Name":"Reg's Volcano","Origin":"Tapanuli, Sumatra","Notes":"sharp, creamy, carmel, green apple, cedar"}
+{"ID":157,"Blend Name":"Heart Level","Origin":"Bababudangiris, India","Notes":"deep, creamy, dates, bittersweet chocolate, cashew"}
+{"ID":158,"Blend Name":"The Java","Origin":"Casanare, Colombia","Notes":"pointed, juicy, rubber, lemongrass, mint"}
+{"ID":159,"Blend Name":"Holiday Solstice","Origin":"Western Region, Tarime, Tanzania","Notes":"faint, smooth, lemon, mint, ginger"}
+{"ID":160,"Blend Name":"Winter Breaker","Origin":"Nilgiris, India","Notes":"complex, watery, banana, red currant, brown sugar"}
+{"ID":161,"Blend Name":"Red Delight","Origin":"Estelí, Nicaragua","Notes":"clean, silky, granola, black cherry, potato defect!"}
+{"ID":162,"Blend Name":"Seattle Choice","Origin":"Coban, Guatemala","Notes":"mild, velvety, grassy, passion fruit, almond"}
+{"ID":163,"Blend Name":"Red ","Origin":"Tecapa-Chinameca, El Salvador","Notes":"dense, velvety, lemonade, mushroom, granola"}
+{"ID":164,"Blend Name":"Major Blend","Origin":"Gayo, Sumatra","Notes":"mild, juicy, hops, sugar cane, lavender"}
+{"ID":165,"Blend Name":"Captain's Breaker","Origin":"Lintong, Sumatra","Notes":"bright, creamy, potato defect!, grassy, lime"}
+{"ID":166,"Blend Name":"Joe America","Origin":"Mount Elgon, Uganda","Notes":"bright, round, corriander, nougat, nectarine"}
+{"ID":167,"Blend Name":"Seattle Forrester","Origin":"Hirazi, Yemen","Notes":"crisp, syrupy, fresh wood, honey, sugar cane"}
+{"ID":168,"Blend Name":"Summer Solstice","Origin":"Mogiana, Brazil","Notes":"rounded, smooth, tomato, rose hips, dill"}
+{"ID":169,"Blend Name":"Kreb-Full-o Symphony","Origin":"Kigeyo Washing Station, Rwanda","Notes":"bright, slick, plum, nutmeg, cherry"}
+{"ID":170,"Blend Name":"The Captain's Volcano","Origin":"Tarrazu, Costa Rica","Notes":"soft, round, lavender, watermelon, dates"}
+{"ID":171,"Blend Name":"Melty Bean","Origin":"Colima, Mexico","Notes":"pointed, creamy, lemonade, apricot, medicinal"}
+{"ID":172,"Blend Name":"American Delight","Origin":"Coban, Guatemala","Notes":"structured, round, papaya, mango, snow pea"}
+{"ID":173,"Blend Name":"Café Forrester","Origin":"Harrar, Ethiopia","Notes":"complex, round, vanilla, granola, golden raisin"}
+{"ID":174,"Blend Name":"Café Java","Origin":"Sidama, Ethiopia","Notes":"sharp, creamy, hay, fresh wood, black currant"}
+{"ID":175,"Blend Name":"Postmodern Extract","Origin":"Volcan, Panama","Notes":"muted, silky, tomato, leathery, mint"}
+{"ID":176,"Blend Name":"Dark Treat","Origin":"Kibale, Uganda","Notes":"muted, round, blueberry, orange blossom, meyer lemon"}
+{"ID":177,"Blend Name":"Red Level","Origin":"Aceh, Sumatra","Notes":"lingering, big, honeysuckle, bergamot, milk chocolate"}
+{"ID":178,"Blend Name":"Good-morning Enlightenment","Origin":"Alotepec-Metapán, El Salvador","Notes":"unbalanced, velvety, raspberry, corriander, jasmine"}
+{"ID":179,"Blend Name":"Pumpkin-spice Star","Origin":"Rulindo, Rwanda","Notes":"wild, slick, figs, passion fruit, black-tea"}
+{"ID":180,"Blend Name":"The Captain's Town","Origin":"Bungoma, Kenya","Notes":"bright, chewy, hibiscus, tomato, squash"}
+{"ID":181,"Blend Name":"Kreb-Full-o Equinox","Origin":"Gayo, Sumatra","Notes":"bright, coating, dates, cantaloupe, mint"}
+{"ID":182,"Blend Name":"Strong ","Origin":"Northern Region, Kilimanjaro, Tanzania","Notes":"muted, coating, strawberry, quakery, marshmallow"}
+{"ID":183,"Blend Name":"Captain's Mug","Origin":"Kiamba, Kenya","Notes":"quick, silky, cacao nibs, lime, lime"}
+{"ID":184,"Blend Name":"Major Volcano","Origin":"San'ani, Yemen","Notes":"mild, round, raspberry, pineapple, cola"}
+{"ID":185,"Blend Name":"Brooklyn Look","Origin":"Mattari, Yemen","Notes":"lingering, round, sage, concord grape, milk chocolate"}
+{"ID":186,"Blend Name":"Evening Enlightenment","Origin":"Cerrado, Brazil","Notes":"sharp, full, figs, cedar, strawberry"}
+{"ID":187,"Blend Name":"Holiday Been","Origin":"Jinotega, Nicaragua","Notes":"astringent, silky, peanut, lavender, squash"}
+{"ID":188,"Blend Name":"Jacked Volcano","Origin":"Nilgiris, India","Notes":"pointed, round, cream, hops, grassy"}
+{"ID":189,"Blend Name":"Seattle Enlightenment","Origin":"Kirinyaga, Kenya","Notes":"rounded, big, rose hips, nougat, black currant"}
+{"ID":190,"Blend Name":"The Captain's Star","Origin":"Matagalpa, Nicaragua","Notes":"structured, smooth, vanilla, honeysuckle, marshmallow"}
+{"ID":191,"Blend Name":"Goodbye Level","Origin":"Lake Kivu Region, Rwanda","Notes":"astringent, silky, mushroom, leathery, hops"}
+{"ID":192,"Blend Name":"Goodbye Look","Origin":"Kayanza, Burundi","Notes":"pointed, syrupy, molasses, cherry, hibiscus"}
+{"ID":193,"Blend Name":"The Captain's Nuts","Origin":"Cerrado, Brazil","Notes":"clean, full, mango, carbon, mushroom"}
+{"ID":194,"Blend Name":"The Java","Origin":"Lake Kivu Region, Rwanda","Notes":"delicate, tea-like, rye, blueberry, raspberry"}
+{"ID":195,"Blend Name":"Bluebery Equinox","Origin":"Alotepec-Metapán, El Salvador","Notes":"dry, watery, cashew, lemongrass, carbon"}
+{"ID":196,"Blend Name":"Pumpkin-spice Solstice","Origin":"Travancore, India","Notes":"balanced, syrupy, banana, rubber, lemon verbena"}
+{"ID":197,"Blend Name":"Veranda Cowboy","Origin":"Fraijanes, Guatemala","Notes":"faint, big, dates, medicinal, dates"}
+{"ID":198,"Blend Name":"Goodbye Enlightenment","Origin":"Cerrado, Brazil","Notes":"dry, watery, black-tea, carbon, marshmallow"}
+{"ID":199,"Blend Name":"Huggy Solstice","Origin":"Embu, Kenya","Notes":"structured, juicy, molasses, clove, lavender"}
+{"ID":200,"Blend Name":"Dark Breaker","Origin":"Nyanza, Kenya","Notes":"wild, creamy, grassy, mango, bittersweet chocolate"}
+{"ID":201,"Blend Name":"Kreb-Full-o Delight","Origin":"Apaneca-Ilamatepec, El Salvador","Notes":"deep, juicy, leafy greens, grassy, mushroom"}
+{"ID":202,"Blend Name":"Goodbye Town","Origin":"Brunca, Costa Rica","Notes":"dull, velvety, black currant, orange, honeydew"}
+{"ID":203,"Blend Name":"Kreb-Full-o Cup","Origin":"Mount Elgon, Uganda","Notes":"unbalanced, coating, white pepper, smokey, rose hips"}
+{"ID":204,"Blend Name":"Brooklyn Mug","Origin":"Bugisu, Uganda","Notes":"clean, creamy, burnt sugar, white pepper, rye"}
+{"ID":205,"Blend Name":"Spilt Cake","Origin":"Madriz, Nicaragua","Notes":"lingering, silky, jasmine, figs, leathery"}
+{"ID":206,"Blend Name":"Express Cup","Origin":"Acatenango, Guatemala","Notes":"bright, smooth, potato defect!, golden raisin, orange"}
+{"ID":207,"Blend Name":"Split Breaker","Origin":"El Balsamo-Quetzaltepec, El Salvador","Notes":"dry, chewy, figs, black currant, white grape"}
+{"ID":208,"Blend Name":"Seattle Look","Origin":"Masaya, Nicaragua","Notes":"structured, coating, almond, honey, bittersweet chocolate"}
+{"ID":209,"Blend Name":"KrebStar Bean","Origin":"El Balsamo-Quetzaltepec, El Salvador","Notes":"sharp, round, red currant, strawberry, white pepper"}
+{"ID":210,"Blend Name":"Major Star","Origin":"Murang'a, Kenya","Notes":"deep, smooth, carbon, corriander, mushroom"}
+{"ID":211,"Blend Name":"Strong Mug","Origin":"Santander, Colombia","Notes":"soft, full, concord grape, soy sauce, mint"}
+{"ID":212,"Blend Name":"Holiday Utopia","Origin":"Agalta, Honduras","Notes":"astringent, smooth, passion fruit, cinnamon, tamarind"}
+{"ID":213,"Blend Name":"Holiday Volcano","Origin":"Boyacá, Colombia","Notes":"lingering, full, bakers chocolate, red currant, tomato"}
+{"ID":214,"Blend Name":"KrebStar Enlightenment","Origin":"Bungoma, Kenya","Notes":"dirty, full, nutmeg, prune, brown sugar"}
+{"ID":215,"Blend Name":"Reg's Cup","Origin":"Thika, Kenya","Notes":"clean, big, maple syrup, black cherry, prune"}
+{"ID":216,"Blend Name":"KrebStar Nuts","Origin":"Kayanza, Burundi","Notes":"dirty, juicy, tangerine, cranberry, honey"}
+{"ID":217,"Blend Name":"Strong Cowboy","Origin":"Mbeya Region, Tanzania","Notes":"sharp, silky, lemongrass, carmel, star fruit"}
+{"ID":218,"Blend Name":"Evening Cowboy","Origin":"Lintong, Sumatra","Notes":"wild, velvety, olive, olive, concord grape"}
+{"ID":219,"Blend Name":"Pumpkin-spice Enlightenment","Origin":"Orosi, Costa Rica","Notes":"dirty, chewy, marshmallow, granola, vanilla"}
+{"ID":220,"Blend Name":"Kreb-Full-o America","Origin":"Tres Rios, Costa Rica","Notes":"faint, round, orange creamsicle, milk chocolate, mushroom"}
+{"ID":221,"Blend Name":"Wake-up Cup","Origin":"Casanare, Colombia","Notes":"dirty, round, cocoa powder, lemongrass, lime"}
+{"ID":222,"Blend Name":"Morning Utopia","Origin":"Tres Rios, Costa Rica","Notes":"faint, watery, mango, bittersweet chocolate, lemongrass"}
+{"ID":223,"Blend Name":"Major America","Origin":"Machakos, Kenya","Notes":"unbalanced, big, brown sugar, peach, mango"}
+{"ID":224,"Blend Name":"The Town","Origin":"Northern Region, Arusha, Tanzania","Notes":"delicate, creamy, blueberry, green-tea, ginger"}
+{"ID":225,"Blend Name":"Split Nuts","Origin":"Tecapa-Chinameca, El Salvador","Notes":"balanced, chewy, baggy, dates, vanilla"}
+{"ID":226,"Blend Name":"Melty America","Origin":"Sul Minas, Brazil","Notes":"unbalanced, coating, coconut, marshmallow, mango"}
+{"ID":227,"Blend Name":"Heart Level","Origin":"Nilgiris, India","Notes":"lingering, slick, snow pea, mango, kiwi"}
+{"ID":228,"Blend Name":"Jacked Forrester","Origin":"Gayo, Sumatra","Notes":"lingering, juicy, potato defect!, wheat, dill"}
+{"ID":229,"Blend Name":"Seattle Breaker","Origin":"Atitlan, Guatemala","Notes":"rounded, juicy, red grape, cinnamon, grassy"}
+{"ID":230,"Blend Name":"Dark Look","Origin":"Tecapa-Chinameca, El Salvador","Notes":"astringent, tea-like, green-tea, nougat, snow pea"}
+{"ID":231,"Blend Name":"Chocolate Choice","Origin":"West Valley, Costa Rica","Notes":"lingering, full, cacao nibs, lemon verbena, cedar"}
+{"ID":232,"Blend Name":"Chocolate Solstice","Origin":"Brahmaputra, India","Notes":"juicy, coating, granola, milk chocolate, nectarine"}
+{"ID":233,"Blend Name":"Chocolate Choice","Origin":"Raimi, Yemen","Notes":"rounded, juicy, lemongrass, marshmallow, carmel"}
+{"ID":234,"Blend Name":"Huggy Mug","Origin":"Thika, Kenya","Notes":"dull, chewy, mint, nutmeg, orange creamsicle"}
+{"ID":235,"Blend Name":"Hello Forrester","Origin":"Western Region, Tarime, Tanzania","Notes":"juicy, big, black currant, lemongrass, hazelnut"}
+{"ID":236,"Blend Name":"Dark Look","Origin":"Nayarit, Mexico","Notes":"rounded, tea-like, squash, grassy, cedar"}
+{"ID":237,"Blend Name":"Kreb-Full-o Extract","Origin":"Sul Minas, Brazil","Notes":"dense, watery, mushroom, dill, cacao nibs"}
+{"ID":238,"Blend Name":"Morning Java","Origin":"Granada, Nicaragua","Notes":"mild, chewy, potato defect!, tamarind, olive"}
+{"ID":239,"Blend Name":"Summer Cowboy","Origin":"Kibale, Uganda","Notes":"deep, coating, lemongrass, rye, orange"}
+{"ID":240,"Blend Name":"Heart Delight","Origin":"Mount Elgon, Uganda","Notes":"clean, full, musty, cherry, pineapple"}
+{"ID":241,"Blend Name":"Postmodern Cup","Origin":"Western Region, Kigoma, Tanzania","Notes":"tart, smooth, corriander, butter, grapefruit"}
+{"ID":242,"Blend Name":"Captain's Forrester","Origin":"Hidalgo, Mexico","Notes":"structured, juicy, lemon, mint, raspberry"}
+{"ID":243,"Blend Name":"Jacked Coffee","Origin":"Tapanuli, Sumatra","Notes":"balanced, silky, orange creamsicle, butter, star fruit"}
+{"ID":244,"Blend Name":"Winter Symphony","Origin":"Kigeyo Washing Station, Rwanda","Notes":"mild, round, hay, cacao nibs, carbon"}
+{"ID":245,"Blend Name":"Express Equinox","Origin":"Northern Region, Arusha, Tanzania","Notes":"muted, syrupy, black currant, red apple, grassy"}
+{"ID":246,"Blend Name":"Summer Java","Origin":"Copan, Honduras","Notes":"balanced, smooth, potato defect!, granola, bakers chocolate"}
+{"ID":247,"Blend Name":"KrebStar Equinox","Origin":"Opalca, Honduras","Notes":"faint, juicy, apricot, lime, lavender"}
+{"ID":248,"Blend Name":"The Equinox","Origin":"Raimi, Yemen","Notes":"lingering, big, cherry, green apple, cantaloupe"}
+{"ID":249,"Blend Name":"Wake-up Look","Origin":"Cundinamarca, Colombia","Notes":"astringent, chewy, watermelon, soy sauce, raspberry"}
+{"ID":250,"Blend Name":"Dark Forrester","Origin":"West Valley, Costa Rica","Notes":"soft, coating, snow pea, carmel, cream"}
+{"ID":251,"Blend Name":"Blacktop Pie","Origin":"Turrialba, Costa Rica","Notes":"mild, creamy, walnut, green-tea, quakery"}
+{"ID":252,"Blend Name":"Chocolate Breaker","Origin":"Kabirizi, Rwanda","Notes":"wild, round, banana, honeysuckle, mushroom"}
+{"ID":253,"Blend Name":"Dark Java","Origin":"Volcan, Panama","Notes":"muted, slick, star fruit, corriander, liquorice"}
+{"ID":254,"Blend Name":"Holiday Cup","Origin":"Southern Region, Morogoro, Tanzania","Notes":"vibrant, big, cranberry, clementine, tomato"}
+{"ID":255,"Blend Name":"Thanksgiving Town","Origin":"Opalca, Honduras","Notes":"delicate, slick, carmel, honey, plum"}
+{"ID":256,"Blend Name":"Thanksgiving America","Origin":"Northern Region, Arusha, Tanzania","Notes":"tart, full, papaya, walnut, carmel"}
+{"ID":257,"Blend Name":"Joe Pie","Origin":"Bugisu, Uganda","Notes":"sharp, slick, fresh bread, apricot, concord grape"}
+{"ID":258,"Blend Name":"Huggy Extract","Origin":"Gayo, Sumatra","Notes":"tart, watery, toast, marshmallow, green grape"}
+{"ID":259,"Blend Name":"Veranda Star","Origin":"Cerrado, Brazil","Notes":"dry, velvety, passion fruit, golden raisin, green grape"}
+{"ID":260,"Blend Name":"Cascara Cup","Origin":"Agalta, Honduras","Notes":"delicate, silky, carmel, honey, plum"}
+{"ID":261,"Blend Name":"Veranda Cake","Origin":"Gishamwana Coffee Island, Rwanda","Notes":"complex, creamy, green apple, hibiscus, brown sugar"}
+{"ID":262,"Blend Name":"Melty Treat","Origin":"Chiriqui, Panama","Notes":"balanced, round, baggy, black currant, white grape"}
+{"ID":263,"Blend Name":"The Captain's Cup","Origin":"Turrialba, Costa Rica","Notes":"dry, full, tobacco, lychee, tomato"}
+{"ID":264,"Blend Name":"Chocolate Select","Origin":"Nyeri, Kenya","Notes":"lingering, full, sage, hops, lemon"}
+{"ID":265,"Blend Name":"Blue Cake","Origin":"Nayarit, Mexico","Notes":"wild, full, star fruit, lemon verbena, orange blossom"}
+{"ID":266,"Blend Name":"Hello Look","Origin":"Kibale, Uganda","Notes":"dry, full, sweet pea, sage, star fruit"}
+{"ID":267,"Blend Name":"Brooklyn Solstice","Origin":"Lekempti, Ethiopia","Notes":"bright, round, molasses, black currant, grassy"}
+{"ID":268,"Blend Name":"Winter Volcano","Origin":"Mogiana, Brazil","Notes":"tart, slick, walnut, hay, pineapple"}
+{"ID":269,"Blend Name":"Goodbye ","Origin":"Volcan, Panama","Notes":"structured, smooth, apricot, liquorice, corriander"}
+{"ID":270,"Blend Name":"Chocolate Pie","Origin":"Volcan, Panama","Notes":"lingering, coating, red apple, carbon, bakers chocolate"}
+{"ID":271,"Blend Name":"Summer Treat","Origin":"Mogiana, Brazil","Notes":"soft, juicy, white pepper, baggy, walnut"}
+{"ID":272,"Blend Name":"Split Forrester","Origin":"Kisii, Kenya","Notes":"astringent, smooth, lavender, nutmeg, black-tea"}
+{"ID":273,"Blend Name":"Evening Select","Origin":"Lake Kivu Region, Rwanda","Notes":"soft, slick, hazelnut, jasmine, fresh bread"}
+{"ID":274,"Blend Name":"Express Solstice","Origin":"El Balsamo-Quetzaltepec, El Salvador","Notes":"wild, slick, molasses, cranberry, black currant"}
+{"ID":275,"Blend Name":"KrebStar Star","Origin":"Jalisco, Mexico","Notes":"deep, slick, mango, peach, meyer lemon"}
+{"ID":276,"Blend Name":"Wake-up Select","Origin":"Western Region, Kigoma, Tanzania","Notes":"bright, silky, barley, cranberry, cacao nibs"}
+{"ID":277,"Blend Name":"Melty Utopia","Origin":"Madriz, Nicaragua","Notes":"muted, chewy, cola, lychee, tangerine"}
+{"ID":278,"Blend Name":"Spilt Pie","Origin":"Rulindo, Rwanda","Notes":"dirty, chewy, walnut, magnolia, cream"}
+{"ID":279,"Blend Name":"Winter Volcano","Origin":"Tres Rios, Costa Rica","Notes":"astringent, round, watermelon, strawberry, maple syrup"}
+{"ID":280,"Blend Name":"Pumpkin-spice Java","Origin":"Gishamwana Coffee Island, Rwanda","Notes":"wild, creamy, nougat, tamarind, jasmine"}
+{"ID":281,"Blend Name":"Evening Utopia","Origin":"Madriz, Nicaragua","Notes":"crisp, smooth, red grape, red currant, rye"}
+{"ID":282,"Blend Name":"American Nuts","Origin":"Nayarit, Mexico","Notes":"rounded, syrupy, orange blossom, black pepper, nutmeg"}
+{"ID":283,"Blend Name":"Blacktop Solstice","Origin":"Lintong, Sumatra","Notes":"deep, syrupy, blueberry, coconut, strawberry"}
+{"ID":284,"Blend Name":"Major Mug","Origin":"Biligiris, India","Notes":"delicate, juicy, cinnamon, nutmeg, white pepper"}
+{"ID":285,"Blend Name":"Blue Look","Origin":"Mbeya Region, Tanzania","Notes":"wild, round, milk chocolate, soy sauce, hazelnut"}
+{"ID":286,"Blend Name":"KrebStar Been","Origin":"Kayanza, Burundi","Notes":"faint, full, green-tea, dill, bittersweet chocolate"}
+{"ID":287,"Blend Name":"Huggy Nuts","Origin":"Mbeya Region, Tanzania","Notes":"structured, smooth, baggy, black currant, kiwi"}
+{"ID":288,"Blend Name":"Heart Mug","Origin":"Western Region, Tarime, Tanzania","Notes":"wild, creamy, lavender, hibiscus, rose hips"}
+{"ID":289,"Blend Name":"Cascara Solstice","Origin":"Kericho, Kenya","Notes":"unbalanced, watery, curry, cherry, passion fruit"}
+{"ID":290,"Blend Name":"Huggy Solstice","Origin":"Santander, Colombia","Notes":"pointed, creamy, orange, green-tea, red currant"}
+{"ID":291,"Blend Name":"Bluebery Java","Origin":"Boyacá, Colombia","Notes":"dull, slick, white grape, peach, snow pea"}
+{"ID":292,"Blend Name":"Reg's ","Origin":"Tapanuli, Sumatra","Notes":"dry, juicy, granola, passion fruit, coconut"}
+{"ID":293,"Blend Name":"Seattle Level","Origin":"Granada, Nicaragua","Notes":"juicy, coating, orange blossom, marzipan, black cherry"}
+{"ID":294,"Blend Name":"Major Town","Origin":"Raimi, Yemen","Notes":"dull, tea-like, mushroom, mango, lemonade"}
+{"ID":295,"Blend Name":"Goodbye Delight","Origin":"Gimbi, Ethiopia","Notes":"quick, silky, fresh bread, magnolia, milk chocolate"}
+{"ID":296,"Blend Name":"Winter America","Origin":"Manjarabad, India","Notes":"clean, velvety, passion fruit, golden raisin, raisin"}
+{"ID":297,"Blend Name":"Goodbye Forrester","Origin":"Coorg, India","Notes":"vibrant, syrupy, strawberry, granola, papaya"}
+{"ID":298,"Blend Name":"Blacktop Town","Origin":"Chiapas, Mexico","Notes":"delicate, syrupy, orange, cranberry, barley"}
+{"ID":299,"Blend Name":"Jacked Cake","Origin":"Wellega, Ethiopia","Notes":"sharp, smooth, cinnamon, liquorice, raspberry"}
