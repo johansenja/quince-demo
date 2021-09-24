@@ -9,7 +9,7 @@ GEM
     oj (3.13.7)
     puma (5.4.0)
       nio4r (~> 2.0)
-    quince (0.4.1)
+    quince (0.4.2)
       oj (~> 3.13)
       typed_struct (>= 0.1.4)
     quince_sinatra (0.1.3)

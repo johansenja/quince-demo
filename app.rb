@@ -121,6 +121,7 @@ class Layout < Quince::Component
         link(href: "https://fonts.googleapis.com/css2?family=PT+Sans&display=swap", rel: :stylesheet),
         link(href: "/style.css", rel: :stylesheet),
         internal_scripts,
+        error_message_styles,
       ),
       body(
         children,

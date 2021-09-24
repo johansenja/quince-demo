@@ -5,7 +5,7 @@ class Introduction < Quince::Component
         "Welcome to Quince rb"
       ),
       h4(
-        "These pages serve to show what Quince's current capabilites, including code examples. ",
+        "These pages serve to show Quince's current capabilites, including code examples. ",
         "Take a look around!"
       ),
       hr,
