@@ -1,5 +1,6 @@
 class InfiniteScroll < Quince::Component
   PAGE_SIZE = 20
+  TBODY_SELECTOR = "table_body".freeze
 
   State(
     coffees: Rbs("Array[MockCoffeeProvider::Coffee]"),
@@ -30,21 +31,15 @@ class InfiniteScroll < Quince::Component
     end
   end
 
-  TBODY_SELECTOR = "table_body"
-
   def render
-    cb = if state.end_of_list_reached
-           Undefined
-         else
-           callback :load_more,
-                    if: "this.scrollTop >= this.scrollHeight - 750",
-                    debounce_ms: 300,
-                    rerender: {
-                      mode: :append_diff,
-                      method: :render_coffee_list,
-                      selector: "##{TBODY_SELECTOR}",
-                    }
-         end
+    cb = callback :load_more,
+                  if: "this.scrollTop >= this.scrollHeight - 750",
+                  debounce_ms: 300,
+                  rerender: {
+                    mode: :append_diff,
+                    method: :render_coffee_list,
+                    selector: "##{TBODY_SELECTOR}",
+                  }
 
     section(id: :infinite_scroll) {[
       h2("Top coffees of all time"),
