@@ -37,12 +37,11 @@ class Introduction < Quince::Component
       ),
       CodePanel(const: "Counter"),
       para(
-        %q{In some cases though, Quince can't provide all the "glue" that you need right out of },
-        "the box - for instance features which can ",
-        strong("only"),
-        " be done on the front end. Quince also provides you with the building blocks to write some of ",
-        " your own JavaScript code so you can integrate it with the rest of the app. ",
-        %q{For instance, see the "Infinite scroll" demo for an example of this.}
+        "In some cases, you may want to be be quite specific about how callbacks are run, instead of ",
+        %q{a very basic "click-and-replace" functionality. For instance, you may want to run them },
+        "conditionally, or with a debounce, or so that it appends the resulting elements instead of ",
+        %q{replacing them. See the "Infinite scroll" demo for an example of how all three of these },
+        "things can combine.",
       ),
       h4(
         "Also note that Quince is still in early development, so is likely to be unstable for the first ",
