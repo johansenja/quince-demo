@@ -27,7 +27,7 @@ class Content < Quince::Component
 
   def initialize
     @state = State.new(
-      page: params.fetch(:page, :intro),
+      page: params.fetch(:page, :intro).to_sym,
     )
   end
 
@@ -59,9 +59,10 @@ class Content < Quince::Component
     state.page = :infinite_scroll
   end
 
-  private def render_li(clbck, label, active)
-    li(Class: active ? :active : Undefined) {
-      button(onclick: clbck) { label }
+  private def render_li(clbck, label, page)
+    new_param_state = page == :intro ? {} : { page: page }
+    li(Class: state.page == page ? :active : Undefined) {
+      button(onclick: callback(clbck, push_params_state: new_param_state)) { label }
     }
   end
 
@@ -86,13 +87,13 @@ class Content < Quince::Component
       main(
         nav(
           ul(
-            render_li(callback(:set_intro), "Introduction", state.page == :intro),
-            render_li(callback(:set_counter), "Increment a counter", state.page == :counter),
-            render_li(callback(:set_show_hide), "Show/hide some text", state.page == :show_hide),
-            render_li(callback(:set_syntax), "Server-rendered syntax highlighting", state.page == :syntax_highlighting),
-            render_li(callback(:set_basic_form), "Basic form", state.page == :basic_form),
-            render_li(callback(:set_autocomplete), "Basic text input autocomplete", state.page == :autocomplete),
-            render_li(callback(:set_infinite_scroll), "Infinite scroll", state.page == :infinite_scroll),
+            render_li(:set_intro, "Introduction", :intro),
+            render_li(:set_counter, "Increment a counter", :counter),
+            render_li(:set_show_hide, "Show/hide some text", :show_hide),
+            render_li(:set_syntax, "Server-rendered syntax highlighting", :syntax_highlighting),
+            render_li(:set_basic_form, "Basic form", :basic_form),
+            render_li(:set_autocomplete, "Basic text input autocomplete", :autocomplete),
+            render_li(:set_infinite_scroll, "Infinite scroll", :infinite_scroll),
             li(button(disabled: true) { "Multi step form - coming soon" }),
           ),
           footer(
