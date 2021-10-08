@@ -9,6 +9,7 @@ require_relative "app/autocomplete"
 require_relative "app/syntax_highlighting"
 require_relative "app/introduction"
 require_relative "app/infinite_scroll"
+require_relative "app/chart"
 
 class Index < Quince::Component
   def render
@@ -21,7 +22,7 @@ end
 class Content < Quince::Component
   State(
     page: Rbs(
-      ":intro | :counter | :show_hide | :basic_form | :autocomplete | :syntax_highlighting | :infinite_scroll | Undefined"
+      ":intro | :counter | :show_hide | :basic_form | :autocomplete | :syntax_highlighting | :infinite_scroll | :chart | nil"
     ),
   )
 
@@ -59,9 +60,13 @@ class Content < Quince::Component
     state.page = :infinite_scroll
   end
 
+  exposed def set_chart
+    state.page = :chart
+  end
+
   private def render_li(clbck, label, page)
     new_param_state = page == :intro ? {} : { page: page }
-    li(Class: state.page == page ? :active : Undefined) {
+    li(Class: state.page == page ? :active : nil) {
       button(onclick: callback(clbck, push_params_state: new_param_state)) { label }
     }
   end
@@ -74,6 +79,7 @@ class Content < Quince::Component
     autocomplete: "Autocomplete",
     syntax_highlighting: "SyntaxHighlightingDemo",
     infinite_scroll: "InfiniteScroll",
+    chart: "ChartExample",
   }.freeze
 
   def render
@@ -90,11 +96,11 @@ class Content < Quince::Component
             render_li(:set_intro, "Introduction", :intro),
             render_li(:set_counter, "Increment a counter", :counter),
             render_li(:set_show_hide, "Show/hide some text", :show_hide),
-            render_li(:set_syntax, "Server-rendered syntax highlighting", :syntax_highlighting),
+            render_li(:set_syntax, "Syntax highlighting", :syntax_highlighting),
             render_li(:set_basic_form, "Basic form", :basic_form),
             render_li(:set_autocomplete, "Basic text input autocomplete", :autocomplete),
             render_li(:set_infinite_scroll, "Infinite scroll", :infinite_scroll),
-            li(button(disabled: true) { "Multi step form - coming soon" }),
+            render_li(:set_chart, "Dynamic charts", :chart),
           ),
           footer(
             a(href: "https://github.com/johansenja/quince", title: "See Quince on GitHub") {

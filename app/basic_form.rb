@@ -18,7 +18,7 @@ class BasicForm < Quince::Component
   end
 
   exposed def process_form
-    name, age, colour = params[:params].values_at(:name, :age, :favourite_colour)
+    name, age, colour = params.values_at(:name, :age, :favourite_colour)
     state.name = name
     state.age = age.to_i
     state.favourite_colour = colour

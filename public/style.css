@@ -284,3 +284,50 @@ blockquote {
 #infinite_scroll td, #infinite_scroll th {
   padding: 8px 16px;
 }
+
+.chart-labels-fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+#chart text {
+  font-family: inherit !important;
+}
+
+#chart .graphBackground {
+  fill: rgba(0,0,0,0.85) !important;
+}
+
+#chart .guideLines {
+  stroke-dasharray: 0 !important;
+  stroke: #9d831c !important;
+}
+
+#chart .dataPointLabelBackground, #chart .dataPointLabel {
+  stroke: transparent !important;
+  fill: #9d831c !important;
+  font-family: inherit !important;
+}
+
+#chart-example-divider {
+  margin: 24px 0;
+  border-width: 3px;
+  border-style: dashed;
+}
+
+#chart-form {
+  padding-bottom: 48px;
+}
+
+#chart-refresh {
+  background-color: darkcyan;
+  color: antiquewhite;
+  padding: 8px 24px;
+  font-size: 24px;
+}
+
+#chart-form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
