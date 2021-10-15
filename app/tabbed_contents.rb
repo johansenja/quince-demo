@@ -14,11 +14,11 @@ class Tabs < Quince::Component
           [
             li(
               onclick: props.set_demo_active,
-              Class: props.current_tab == "demo" ? "active" : Undefined,
+              Class: props.current_tab == "demo" ? "active" : nil,
             ) { "Example" },
             li(
               onclick: props.set_code_active,
-              Class: props.current_tab == "code" ? "active" : Undefined,
+              Class: props.current_tab == "code" ? "active" : nil,
             ) { "Source code" },
           ]
         },
@@ -35,7 +35,7 @@ class CodePanel < Quince::Component
   )
 
   private def get_code
-    return props.code unless props.code == Undefined
+    return props.code unless props.code.nil?
 
     MethodSource.source_helper(
       Object.const_source_location(props.const)

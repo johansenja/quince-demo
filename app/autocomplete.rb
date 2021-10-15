@@ -26,7 +26,7 @@ class Autocomplete < Quince::Component
   end
 
   exposed def set_val
-    val = params[:params][:val]
+    val = params[:val]
     state.val = val
     if val.empty?
       state.selected = nil
