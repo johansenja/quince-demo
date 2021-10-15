@@ -331,3 +331,9 @@ blockquote {
   align-items: center;
   justify-content: space-between;
 }
+
+a.btn {
+  background-color: rgb(220,220,220);
+  padding: 4px 8px;
+  border-radius: 2px;
+}
