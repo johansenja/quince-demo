@@ -204,7 +204,7 @@ class ChartExample < Quince::Component
             },
           ]},
           *props.series.map.with_index { |s, i|
-            Series(series: s, index: i, update_series: props.set_form_values, bar_labels: props.bar_labels)
+            Series(series: s, index: i, bar_labels: props.bar_labels)
           },
         ]},
         props.series.length <= 5 ? (button(onclick: props.add_series) { "Add another document +" }) : nil

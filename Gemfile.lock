@@ -10,7 +10,7 @@ GEM
     oj (3.13.9)
     puma (5.4.0)
       nio4r (~> 2.0)
-    quince (0.6.0)
+    quince (0.6.1)
       oj (~> 3.13)
       rack-contrib (~> 2.3)
       sinatra (~> 2.1)
