@@ -1,5 +1,5 @@
 require "method_source"
-require "quince_sinatra"
+require "quince"
 
 require_relative "app/show_hide"
 require_relative "app/counter"
@@ -10,6 +10,7 @@ require_relative "app/syntax_highlighting"
 require_relative "app/introduction"
 require_relative "app/infinite_scroll"
 require_relative "app/chart"
+require_relative "app/qr_code"
 
 class Index < Quince::Component
   def render
@@ -22,7 +23,7 @@ end
 class Content < Quince::Component
   State(
     page: Rbs(
-      ":intro | :counter | :show_hide | :basic_form | :autocomplete | :syntax_highlighting | :infinite_scroll | :chart | nil"
+      ":intro | :counter | :show_hide | :basic_form | :autocomplete | :syntax_highlighting | :infinite_scroll | :chart | :qr_code | nil"
     ),
   )
 
@@ -64,6 +65,10 @@ class Content < Quince::Component
     state.page = :chart
   end
 
+  exposed def set_qr_code
+    state.page = :qr_code
+  end
+
   private def render_li(clbck, label, page)
     new_param_state = page == :intro ? {} : { page: page }
     li(Class: state.page == page ? :active : nil) {
@@ -80,6 +85,7 @@ class Content < Quince::Component
     syntax_highlighting: "SyntaxHighlightingDemo",
     infinite_scroll: "InfiniteScroll",
     chart: "ChartExample",
+    qr_code: "QrCodeGenerator"
   }.freeze
 
   def render
@@ -101,6 +107,7 @@ class Content < Quince::Component
             render_li(:set_autocomplete, "Basic text input autocomplete", :autocomplete),
             render_li(:set_infinite_scroll, "Infinite scroll", :infinite_scroll),
             render_li(:set_chart, "Dynamic charts", :chart),
+            render_li(:set_qr_code, "QR code generator (w/ download)", :qr_code),
           ),
           footer(
             a(href: "https://github.com/johansenja/quince", title: "See Quince on GitHub") {
